@@ -1,0 +1,102 @@
+body {
+    background-image:url('../images/bg_yellow.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-green {
+    background-image:url('../images/bg-green_1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-footer {
+    background-color: #e6f8f1;
+}
+.bg-clear1 {
+    background-image: url('../images/clear-1.png');
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bg-tag1 {
+    background-image: url('../images/tag1.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.center-imagen {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.multi-regular {
+    font-family: multi_regular;
+    letter-spacing: 2px;
+}
+.welcome {
+    font-family: quicksand_bold;
+    letter-spacing: 20px;
+    line-height: 30px;
+}
+.we-are-cleaning {
+    font-family: lato_light;
+    color:#06446c;
+    background-color: #e6f8f1;
+    letter-spacing: 3px;
+}
+
+.we-are-text {
+    font-family: lato_light;
+    color:#06446c;
+    letter-spacing: 4px;
+    line-height: 30px;
+}
+.legend-footer-text {
+    font-family: lato_thin;
+    letter-spacing: 100%;
+    color:#06446c;
+}
+.footer-copyright {
+    font-family: lato_light;
+}
+
+.menu li {
+    float: left;
+    margin:21px;
+    font-family: lato_light;
+    letter-spacing: 2px;
+}
+li {
+    cursor: pointer;
+}
+
+.btn-book-cleaning {
+    padding: 12px;
+    background-color: rgba(85, 149, 122, 0.3);
+    border: 10px solid rgba(32, 113, 120, 0.1);
+}
+
+
+@font-face {
+    font-family: multi_regular;
+    src: url(fonts/Muli-Regular.ttf.woff);
+}
+@font-face {
+    font-family: lato_light;
+    src: url(fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: lato_thin;
+    src: url(fonts/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: quicksand_bold;
+    src: url(fonts/Quicksand-SemiBold.ttf);
+}
