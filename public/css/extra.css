@@ -1,0 +1,179 @@
+body {
+    background-image:url('../images/bg_yellow.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-green {
+    background-image:url('../images/bg-green_1.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-footer {
+    background-color: #e6f8f1;
+}
+.bg-clear1 {
+    background-image: url('../images/clear-1-x.png');
+    background-size: cover;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-tag1{
+    position: relative;
+    text-align: center;
+}
+
+.bg-tag1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    height: 150px;
+}
+
+.bg-tag1 h1 {
+    font-family: futura_pt_medium;
+    letter-spacing: 2px;
+    color: #06446c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-tag2{
+    position: relative;
+    text-align: center;
+}
+
+.bg-tag2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-tag2 h1 {
+    font-family: futura_pt_medium;
+    letter-spacing: 2px;
+    color: #06446c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* INPUTS */
+.input-suscribe {
+    background-color: #55957a;
+    color:#06446c;
+    padding: 1.2rem;
+    border: 12px solid #06446c;
+    border-radius: 50px;
+}
+.input-suscribe::placeholder {
+    color:#06446c;
+    font-family: josefin_slab;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.btn-suscribe {
+    width: 300px;
+    background-color: #55957a;
+    padding: 0.5rem;
+    border: 12px solid #06446c;
+    border-radius: 50px;
+    color:#06446c;
+    font-family: josefin_slab;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* FULL TEXT */
+.multi-regular {
+    font-family: multi_regular;
+    letter-spacing: 2px;
+}
+.welcome {
+    font-family: quicksand_bold;
+    letter-spacing: 20px;
+    line-height: 30px;
+}
+.we-are-cleaning {
+    font-family: lato_light;
+    color:#06446c;
+    background-color: #e6f8f1;
+    letter-spacing: 3px;
+}
+
+.we-are-text {
+    font-family: lato_light;
+    color:#06446c;
+    letter-spacing: 4px;
+    line-height: 30px;
+}
+.dont-miss {
+    font-family: josefin_slab;
+    letter-spacing: 4px;
+}
+.legend-footer-text {
+    font-family: lato_thin;
+    letter-spacing: 100%;
+    color:#06446c;
+}
+.footer-copyright {
+    font-family: lato_light;
+}
+
+.menu li {
+    float: left;
+    margin:21px;
+    font-family: lato_light;
+    letter-spacing: 2px;
+}
+li {
+    cursor: pointer;
+}
+
+.btn-book-cleaning {
+    padding: 12px;
+    background-color: rgba(85, 149, 122, 0.3);
+    border: 10px solid rgba(32, 113, 120, 0.1);
+}
+
+
+@font-face {
+    font-family: multi_regular;
+    src: url(fonts/Muli-Regular.ttf.woff);
+}
+@font-face {
+    font-family: lato_light;
+    src: url(fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: lato_thin;
+    src: url(fonts/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: quicksand_bold;
+    src: url(fonts/Quicksand-SemiBold.ttf);
+}
+@font-face {
+    font-family: futura_pt_medium;
+    src: url(fonts/Futura-Pt-Medium.ttf);
+}
+@font-face {
+    font-family: josefin_slab;
+    src: url(fonts/JosefinSlab-Light.ttf);
+}
+
+@media (min-width:1280px){
+    .welcome {
+        letter-spacing: 30px;
+        line-height: 40px;
+    }
+  }
