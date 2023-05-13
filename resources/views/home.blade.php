@@ -49,7 +49,7 @@
     <div class="bg-clear1" style="position: relative;">
         <div class="bumble">
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div class="bg-tag2">
             <img src="./images/tag2.png" width="40%">
             <h1 class="text-3xl">Join PureStart Newsletter</h1>

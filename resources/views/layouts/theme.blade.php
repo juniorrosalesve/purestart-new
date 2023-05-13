@@ -32,9 +32,15 @@
         </div>
         <div class="flex justify-center">
             <ul class="menu uppercase text-lg">
-                <li onclick="location.href='{{ route('home') }}'">Home</li>
-                <li onclick="location.href='{{ route('about') }}'">About</li>
-                <li>Services</li>
+                <li onclick="location.href='{{ route('home') }}'" @if (\Request::route()->getName() == 'home')
+                    class="active"
+                @endif>Home</li>
+                <li onclick="location.href='{{ route('about') }}'" @if (\Request::route()->getName() == 'about')
+                    class="active"
+                @endif>About</li>
+                <li onclick="location.href='{{ route('services') }}'" @if (\Request::route()->getName() == 'services')
+                    class="active"
+                @endif>Services</li>
                 <li>Reviews</li>
                 <li>Faq</li>
                 <li>Contact</li>

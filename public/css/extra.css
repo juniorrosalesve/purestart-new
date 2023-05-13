@@ -1,3 +1,4 @@
+/* Backgrounds */
 body {
     background-image:url('../images/bg_yellow.png');
     background-size: cover; 
@@ -11,6 +12,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.bg-green3 {
+    background-image:url('../images/bg-green_3.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-rose {
+    background-image:url('../images/bg-rose2.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .bg-footer {
     background-color: #e6f8f1;
 }
@@ -65,6 +80,37 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.bg-yellow-vertical {
+    background-image:url('../images/bg_yellow_vertical.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .bg-about-header {
+    max-width: 800px;
+    margin: auto;
+    padding:20px;
+    background-color: #e6f8f1;
+} */
+
+.bg-about-header{
+    position: relative;
+    text-align: center;
+}
+
+.bg-about-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-about-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* INPUTS */
 .input-suscribe {
     background-color: #55957a;
@@ -83,7 +129,7 @@ body {
 .btn-suscribe {
     width: 300px;
     background-color: #55957a;
-    padding: 0.5rem;
+    padding: 0.2rem;
     border: 12px solid #06446c;
     border-radius: 50px;
     color:#06446c;
@@ -129,20 +175,107 @@ body {
     font-family: lato_light;
 }
 
+.title_about {
+    font-family: true_north;
+    letter-spacing: 10px;
+    color:#000;
+    text-align: center;
+}
+.arco-women {
+    font-family: josefin_slab;
+    color:#000;
+    letter-spacing: 3px;
+}
+.arco-purestart {
+    font-family: josefin_slab;
+    color:#000;
+    letter-spacing: 3px;
+}
+.profile {
+    font-family: lato_light;
+    color:#06446c;
+}
+.our-values {
+    font-family: josefin_slab;
+    color:#000;
+}
+.our-values-text {
+    font-family: josefin_slab;
+    color:#000;
+    letter-spacing: 10px;
+}
+
+.bg-icon-edificio {
+    background-color: #fbb93d;
+    background-image:url('../images/icons/edificio-colorido.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-icon-garaje {
+    background-color: #fbb93d;
+    background-image:url('../images/icons/garaje-colorido.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-icon-casa {
+    background-color: #fbb93d;
+    background-image:url('../images/icons/casa-colorida.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-color-white {
+    filter: invert(98%) sepia(99%) saturate(6130%) hue-rotate(182deg) brightness(124%) contrast(96%);
+    width:300px;
+    margin:auto;
+}
+.icon-color-orange {
+    filter: invert(70%) sepia(100%) saturate(1277%) hue-rotate(328deg) brightness(99%) contrast(104%);
+}
+.service-info p {
+    font-family: lato_light;
+    color:#06446c;
+    letter-spacing: 4px;
+}
+.service-info2 p {
+    font-family: lato_light;
+    color:#06446c;
+}
+
+/* MENU */
 .menu li {
     float: left;
     margin:21px;
     font-family: lato_light;
     letter-spacing: 2px;
 }
+.menu .active {
+    color:#064e7e
+}
 li {
     cursor: pointer;
 }
 
+/* EXTRA */
 .btn-book-cleaning {
     padding: 12px;
     background-color: rgba(85, 149, 122, 0.3);
     border: 10px solid rgba(32, 113, 120, 0.1);
+}
+.logo-arco {
+    border: 7px solid #207178;
+    border-radius: 100px 100px 0px 0px;
+    display: inline-block;
+}
+.lateral-barra { 
+    border:         none;
+    border-left:    3px solid #207178;
+    height:         150px;
+    margin-top: -120px;
+    width:          1px;
+    display: inline-block;
 }
 
 
@@ -171,9 +304,15 @@ li {
     src: url(fonts/JosefinSlab-Light.ttf);
 }
 
+@font-face {
+    font-family: true_north;
+    src: url(fonts/True-North.ttf);
+}
+
+
 @media (min-width:1280px){
     .welcome {
         letter-spacing: 30px;
         line-height: 40px;
     }
-  }
+}
