@@ -68,7 +68,7 @@
             
         </div>
         <div class="flex justify-center mt-10">
-            <button type="button" class="btn-suscribe uppercase">Suscribe</button>
+            <button type="button" class="btn-suscribe uppercase bg-[#55957a]">Suscribe</button>
         </div>
         <br /><br /> 
     </div>

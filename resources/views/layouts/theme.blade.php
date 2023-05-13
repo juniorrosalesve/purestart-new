@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PURESTART, LLC</title>
 
-    <!-- TailwindCSS -->
+    <!-- CSS -->
     @vite('resources/css/app.css')
 
-    <link rel="stylesheet" href="{{ asset('css/extra.css') }}">
 </head>
 <body>
     <div class="bg-green flex justify-evenly p-3 lg:text-lg">

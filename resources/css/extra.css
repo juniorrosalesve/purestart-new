@@ -1,25 +1,25 @@
 /* Backgrounds */
 body {
-    background-image:url('../images/bg_yellow.png');
+    background-image:url('./images/bg_yellow.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .bg-green {
-    background-image:url('../images/bg-green_1.jpg');
+    background-image:url('./images/bg-green_1.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }
 .bg-green3 {
-    background-image:url('../images/bg-green_3.jpg');
+    background-image:url('./images/bg-green_3.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }
 .bg-rose {
-    background-image:url('../images/bg-rose2.png');
+    background-image:url('./images/bg-rose2.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ body {
     background-color: #e6f8f1;
 }
 .bg-clear1 {
-    background-image: url('../images/clear-1-x.png');
+    background-image: url('./images/clear-1-x.png');
     background-size: cover;
     min-height: 600px;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body {
 }
 
 .bg-yellow-vertical {
-    background-image:url('../images/bg_yellow_vertical.png');
+    background-image:url('./images/bg_yellow_vertical.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +128,6 @@ body {
 }
 .btn-suscribe {
     width: 300px;
-    background-color: #55957a;
     padding: 0.2rem;
     border: 12px solid #06446c;
     border-radius: 50px;
@@ -207,21 +206,21 @@ body {
 
 .bg-icon-edificio {
     background-color: #fbb93d;
-    background-image:url('../images/icons/edificio-colorido.png');
+    background-image:url('./images/icons/edificio-colorido.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }
 .bg-icon-garaje {
     background-color: #fbb93d;
-    background-image:url('../images/icons/garaje-colorido.png');
+    background-image:url('./images/icons/garaje-colorido.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }
 .bg-icon-casa {
     background-color: #fbb93d;
-    background-image:url('../images/icons/casa-colorida.png');
+    background-image:url('./images/icons/casa-colorida.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
