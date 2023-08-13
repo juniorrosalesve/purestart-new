@@ -44,8 +44,8 @@
                 <p class="text-md font-semibold">a good first impression on potential business partners and customers. </p>
             </div>
             <div class="my-auto">
-                <a href="{{ route('contact') }}" class="mb-3 md:mb-0">
-                    <button class="btn-book-cleaning">Book a Cleaning</button>
+                <a href="{{ route('contact') }}">
+                    <button class="btn-book-cleaning mb-3 md:mb-0">Book a Cleaning</button>
                 </a>
             </div>
         </div>
