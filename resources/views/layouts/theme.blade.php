@@ -89,7 +89,7 @@
         </div>
     </div>
     <!-- MENU RESPONSIVE -->
-    <div id="menu-responsive" class="fixed top-0 left-0 w-[50%] z-40 h-screen p-4 -translate-x-full bg-slate-100 // scrolld overflow-y-auto overflow-x-hidden" tabindex="-1" aria-labelledby="drawer-label">
+    <div id="menu-responsive" class="fixed top-0 left-0 w-[70%] z-40 h-screen p-4 -translate-x-full bg-slate-100 // scrolld overflow-y-auto overflow-x-hidden" tabindex="-1" aria-labelledby="drawer-label">
         <div class="relative">
             <div class="sticky top-0 z-30 w-full bg-slate-100">
                 <h5 class="flex justify-between items-center mb-4 text-slate-900 text-lg font-semibold" id="drawer-label" type="button" data-drawer-dismiss="menu-responsive" aria-controls="menu-responsive">
@@ -104,36 +104,36 @@
             <div class="">
                 <div>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
-                        <li class="@if (\Request::route()->getName() == 'home') bg-primary text-slate-100 @endif relative float-none border-b-[1px] mb-1 // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                        <li class="@if (\Request::route()->getName() == 'home') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                             <a href="{{ route('home') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Home
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
-                        <li class="@if (\Request::route()->getName() == 'about') bg-primary text-slate-100 @endif relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                        <li class="@if (\Request::route()->getName() == 'about') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                             <a href="{{ route('about') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 About
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
-                        <li class="@if (\Request::route()->getName() == 'services') bg-primary text-slate-100 @endif relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                        <li class="@if (\Request::route()->getName() == 'services') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                             <a href="{{ route('services') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Services
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
-                        <li class="@if (\Request::route()->getName() == 'faq') bg-primary text-slate-100 @endif relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                        <li class="@if (\Request::route()->getName() == 'faq') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                             <a href="{{ route('faq') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Faq
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
-                        <li class="relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="javascript:void(0)" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                        <li class="@if (\Request::route()->getName() == 'contact') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                            <a href="{{ route('contact') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Contact
                             </a>
                         </li>
