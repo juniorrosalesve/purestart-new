@@ -1,17 +1,25 @@
-/* Backgrounds */
-body {
-    background-image:url('./images/bg_yellow.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+/* COLORS */ 
+:root {
+    --primary:#436f5c;
+    --secondary: #E6F8F1;
+    --primary-light: #539B84;
+    --pastel: #FDFDF2;
 }
 
-.bg-green {
-    background-image:url('./images/bg-green_1.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary);
 }
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+.bg-secondary {
+    background-color: var(--secondary);
+}
+.bg-pastel {
+    background-color: var(--pastel);
+}
+
 .bg-green3 {
     background-image:url('./images/bg-green_3.jpg');
     background-size: cover; 
@@ -30,33 +38,43 @@ body {
     background-color: #e6f8f1;
 }
 .bg-clear1 {
-    background-image: url('./images/clear-1-x.png');
+    background-image: url('./images/bg-cleaning.png');
     background-size: cover;
-    min-height: 600px;
+    height: 600px;
     background-repeat: no-repeat;
     background-position: center;
 }
-.bg-tag1{
+/* .bg-tag1{
     position: relative;
     text-align: center;
-}
+} */
 
-.bg-tag1 img {
+/* .bg-tag1 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:300px;
     height: 150px;
+} */
+
+.bg-tag1 {
+    background-image: url('./images/tag1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 31px;
+    margin-top: -5px;
 }
 
 .bg-tag1 h1 {
-    font-family: futura_pt_medium;
+    font-family: lato_light;
+    font-style: italic;
     letter-spacing: 2px;
     color: #06446c;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .bg-tag2{
@@ -122,7 +140,7 @@ body {
 .input-suscribe::placeholder {
     color:#06446c;
     font-family: josefin_slab;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 3px;
 }
@@ -133,26 +151,38 @@ body {
     border-radius: 50px;
     color:#06446c;
     font-family: josefin_slab;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 3px;
 }
 
 /* FULL TEXT */
+.lato-light {
+    font-family: lato_light;
+}
+.lato-thin {
+    font-family: lato_thin;
+}
+.lato-regular {
+    font-family: lato_regular;
+}
+.lato-bold {
+    font-family: lato_bold;
+}
+
+
 .multi-regular {
     font-family: multi_regular;
     letter-spacing: 2px;
 }
 .welcome {
-    font-family: quicksand_bold;
-    letter-spacing: 20px;
-    line-height: 30px;
+    font-family: lato_regular;
 }
 .we-are-cleaning {
     font-family: lato_light;
     color:#06446c;
-    background-color: #e6f8f1;
     letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .we-are-text {
@@ -166,18 +196,21 @@ body {
     letter-spacing: 4px;
 }
 .legend-footer-text {
-    font-family: lato_thin;
-    letter-spacing: 100%;
-    color:#06446c;
+    font-family: lato_light;
+    letter-spacing: 10px;
+    color:#06446C;
 }
 .footer-copyright {
     font-family: lato_light;
+    color:#000;
+    letter-spacing: 5px;
+    font-size: 10px;
 }
 
 .title_about {
-    font-family: true_north;
+    font-family: lato_bold;
     letter-spacing: 10px;
-    color:#000;
+    color:var(--pastel);
     text-align: center;
 }
 .arco-women {
@@ -186,9 +219,10 @@ body {
     letter-spacing: 3px;
 }
 .arco-purestart {
-    font-family: josefin_slab;
+    font-family: lato_thin;
     color:#000;
-    letter-spacing: 3px;
+    letter-spacing: 15px;
+    font-weight: 600;
 }
 .profile {
     font-family: lato_light;
@@ -196,34 +230,37 @@ body {
 }
 .our-values {
     font-family: josefin_slab;
-    color:#000;
+    color:var(--pastel);
 }
 .our-values-text {
     font-family: josefin_slab;
-    color:#000;
+    color:var(--pastel);
     letter-spacing: 10px;
 }
 
 .bg-icon-edificio {
-    background-color: #fbb93d;
-    background-image:url('./images/icons/edificio-colorido.png');
+    background-color: var(--pastel);
+    background-image:url('./images/icons/edificio.svg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 316px;
 }
 .bg-icon-garaje {
-    background-color: #fbb93d;
-    background-image:url('./images/icons/garaje-colorido.png');
+    background-color: var(--pastel);
+    background-image:url('./images/icons/garaje.svg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 316px;
 }
 .bg-icon-casa {
-    background-color: #fbb93d;
-    background-image:url('./images/icons/casa-colorida.png');
+    background-color: var(--pastel);
+    background-image:url('./images/icons/casa.svg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 316px;
 }
 .icon-color-white {
     filter: invert(98%) sepia(99%) saturate(6130%) hue-rotate(182deg) brightness(124%) contrast(96%);
@@ -240,7 +277,15 @@ body {
 }
 .service-info2 p {
     font-family: lato_light;
+    letter-spacing: 7px;
     color:#06446c;
+}
+.faq-text {
+    font-family: lato_light;
+    color:#075767;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 /* MENU */
@@ -256,12 +301,23 @@ body {
 li {
     cursor: pointer;
 }
+.shop-menu {
+    float:right;
+    margin-top: -58px;
+    margin-right: 50px;
+}
+.shop-menu ul li {
+    float: left;
+}
 
 /* EXTRA */
 .btn-book-cleaning {
     padding: 12px;
-    background-color: rgba(85, 149, 122, 0.3);
-    border: 10px solid rgba(32, 113, 120, 0.1);
+    letter-spacing: 2px;
+    background-color: rgba(85, 149, 122, 0.6);
+    border: 10px solid rgba(32, 113, 120, 0.3);
+    color:#06446C;
+    font-weight: 700;
 }
 .logo-arco {
     border: 7px solid #207178;
@@ -291,6 +347,14 @@ li {
     src: url(fonts/Lato-Thin.ttf);
 }
 @font-face {
+    font-family: lato_regular;
+    src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: lato_bold;
+    src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
     font-family: quicksand_bold;
     src: url(fonts/Quicksand-SemiBold.ttf);
 }
@@ -311,7 +375,7 @@ li {
 
 @media (min-width:1280px){
     .welcome {
-        letter-spacing: 30px;
-        line-height: 40px;
+        letter-spacing: 15px;
+        line-height: 15px;
     }
 }

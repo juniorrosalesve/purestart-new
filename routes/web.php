@@ -24,3 +24,15 @@ Route::get('about', function() {
 Route::get('services', function() {
     return view('services');
 })->name('services');
+
+Route::get('faq', function() {
+    return view('faq');
+})->name('faq');
+
+Route::get('shop', function() {
+    return view('shop');
+})->name('shop');
+
+Route::get('contact', function() {
+    return view('contact');
+})->name('contact');
