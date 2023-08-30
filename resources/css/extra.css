@@ -38,11 +38,15 @@
     background-color: #e6f8f1;
 }
 .bg-clear1 {
-    background-image: url('./images/bg-cleaning.png');
+    background-image: url('./images/bg-cleaning-full.jpg');
     background-size: cover;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
+}
+.bg-clear1-green {
+    background-color: rgba(38, 64, 53, 0.8);
+    height: 100%;
 }
 /* .bg-tag1{
     position: relative;
@@ -129,32 +133,97 @@
     transform: translate(-50%, -50%);
 }
 
+.bg-contact {
+    background-image: url('./images/bg-contact.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-contact-green {
+    background-color: rgba(38, 64, 53, 0.5);
+    height: 100%;
+}
+
 /* INPUTS */
 .input-suscribe {
-    background-color: #55957a;
     color:#06446c;
     padding: 1.2rem;
-    border: 12px solid #06446c;
     border-radius: 50px;
+
+    padding: 12px;
+    letter-spacing: 2px;
+    background-color: rgba(85, 149, 122, 0.6);
+    border: 10px solid rgba(32, 113, 120, 0.5);
+    color:#06446c;
+    width:65%;
+    margin:auto;
 }
 .input-suscribe::placeholder {
     color:#06446c;
-    font-family: josefin_slab;
+    font-family: lato_light;
     font-size: 25px;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 3px;    
+}
+.input-suscribe:focus {
+    border: 10px solid rgba(32, 113, 120, 0.5);
 }
 .btn-suscribe {
-    width: 300px;
-    padding: 0.2rem;
-    border: 12px solid #06446c;
-    border-radius: 50px;
     color:#06446c;
-    font-family: josefin_slab;
-    font-size: 25px;
+    padding: 1.1rem;
+    border-radius: 50px;
+    padding: 12px;
+    background-color: rgba(85, 149, 122, 0.6);
+    border: 10px solid rgba(32, 113, 120, 0.5);
+    color:#06446c;
+    width:250px;
+    margin:auto;
+    font-family: lato_light;
+    font-size: 24px;
     text-align: center;
     letter-spacing: 3px;
 }
+
+.input-suscribe-modal {
+    color:#06446c;
+    padding: 1.2rem;
+    border-radius: 50px;
+
+    padding: 8px;
+    letter-spacing: 2px;
+    background-color: rgba(85, 149, 122, 0.6);
+    border: 10px solid rgba(32, 113, 120, 0.5);
+    color:#06446c;
+    width:80%;
+    margin:auto;
+}
+.input-suscribe-modal::placeholder {
+    color:#06446c;
+    font-family: lato_light;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;    
+}
+.input-suscribe-modal:focus {
+    border: 10px solid rgba(32, 113, 120, 0.5);
+}
+
+.btn-suscribe-modal {
+    color:#06446c;
+    padding: 1.1rem;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: rgba(85, 149, 122, 0.6);
+    border: 10px solid rgba(32, 113, 120, 0.5);
+    color:#06446c;
+    width:80%;
+    margin:auto;
+    font-family: lato_light;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
 
 /* FULL TEXT */
 .lato-light {
@@ -170,6 +239,9 @@
     font-family: lato_bold;
 }
 
+.inquire {
+    letter-spacing: 12px;
+}
 
 .multi-regular {
     font-family: multi_regular;
@@ -182,17 +254,22 @@
     font-family: lato_light;
     color:#06446c;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .we-are-text {
-    font-family: lato_light;
+    font-family: lato_thin;
     color:#06446c;
     letter-spacing: 4px;
     line-height: 30px;
+    font-weight: 600;
+}
+.join-new {
+    font-family: tiffany;
+    letter-spacing: 4px;
 }
 .dont-miss {
-    font-family: josefin_slab;
+    font-family: lato_thin;
     letter-spacing: 4px;
 }
 .legend-footer-text {
@@ -229,7 +306,7 @@
     color:#06446c;
 }
 .our-values {
-    font-family: josefin_slab;
+    font-family: lato_thin;
     color:var(--pastel);
 }
 .our-values-text {
@@ -312,12 +389,13 @@ li {
 
 /* EXTRA */
 .btn-book-cleaning {
+    font-family: lato_bold;
     padding: 12px;
     letter-spacing: 2px;
     background-color: rgba(85, 149, 122, 0.6);
     border: 10px solid rgba(32, 113, 120, 0.3);
     color:#06446C;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 .logo-arco {
     border: 7px solid #207178;
@@ -371,6 +449,10 @@ li {
     font-family: true_north;
     src: url(fonts/True-North.ttf);
 }
+@font-face {
+    font-family: tiffany;
+    src: url(fonts/AdobeHandwriting-Tiffany.ttf);
+}
 
 
 @media (min-width:1280px){
@@ -378,4 +460,22 @@ li {
         letter-spacing: 15px;
         line-height: 15px;
     }
+}
+
+.menu-svg path {
+    stroke: #ffffff; /* Background color against your svg */
+    stroke-width: 1px; /*Between 1px and 2px*/
+}
+
+.open-modal {
+    background-color: var(--primary);
+    position: fixed;
+    right: -32px;
+    top: 75%;
+    transform: rotate(-90deg);
+    padding:10px;
+    color:var(--pastel);
+    border-radius: 10px 10px 0px 0px;
+    font-family: lato_light;
+    min-width: 100px;
 }

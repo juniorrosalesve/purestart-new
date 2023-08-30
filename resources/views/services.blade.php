@@ -95,7 +95,7 @@
             </div>
             <div class="mt-10 md:my-auto">
                 <a href="{{ route('contact') }}" class="mb-3 md:mb-0">
-                    <button class="btn-book-cleaning">Book a Cleaning</button>
+                    <button class="btn-book-cleaning">Book a Cleaning!</button>
                 </a>
             </div>
         </div>

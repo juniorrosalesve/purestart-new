@@ -34,30 +34,41 @@
         </div>
         <div class="text-center md:text-left md:flex md:justify-between md:mx-20">
             <div class="we-are-text mt-8 mb-10 uppercase">
-                <p class="text-md font-semibold">PureStart is a local owner-operated commercial cleaning company.</p>
-                <p class="text-lg font-semibold">We know exactly what needs to be done and how. </p>
-                <p class="text-2xl font-semibold">Our results are directly related</p>
-                <p class="text-md font-semibold">to high quality products, meticulous processes, and passion.</p>
-                <p class="text-md font-semibold">We ensure your space is clean and well maintained. We want </p>
-                <p class="text-md font-semibold">you and your employees happy, healthy and productive</p>
-                <p class="text-2xl font-semibold">We itch for you and your team to leave</p>
-                <p class="text-md font-semibold">a good first impression on potential business partners and customers. </p>
+                <p class="text-md font-semibold md:hidden">PureStart is a local owner-operated commercial cleaning company.</p>
+                <p class="text-lg font-semibold md:hidden">We know exactly what needs to be done and how. </p>
+                <p class="text-2xl font-semibold md:hidden">Our results are directly related</p>
+                <p class="text-md font-semibold md:hidden">to high quality products, meticulous processes, and passion.</p>
+                <p class="text-md font-semibold md:hidden">We ensure your space is clean and well maintained. We want </p>
+                <p class="text-md font-semibold md:hidden">you and your employees happy, healthy and productive</p>
+                <p class="text-2xl font-semibold md:hidden">We itch for you and your team to leave</p>
+                <p class="text-md font-semibold md:hidden">a good first impression on potential business partners and customers. </p>
+            
+                <p class="text-[12.5px] font-semibold hidden md:block">PureStart is a local owner-operated commercial cleaning company.</p>
+                <p class="text-[20px] font-semibold hidden md:block">We know exactly what needs to be done and how. </p>
+                <p class="text-[20.2px] font-semibold hidden md:block">Our results are directly related to high quality</p>
+                <p class="text-[22.5px] font-semibold hidden md:block">products, meticulous processes, and passion.</p>
+                <p class="text-[15.1px] font-semibold hidden md:block">We ensure your space is clean and well maintained. We want </p>
+                <p class="text-[17.3px] font-semibold hidden md:block">you and your employees happy, healthy and productive</p>
+                <p class="text-[27px] font-semibold hidden md:block">We itch for you and your team to leave</p>
+                <p class="text-[22px] font-semibold hidden md:block">a good first impression on potential business</p>
+                <p class="text-[48.5px] font-semibold hidden md:block mt-2">partners and customers.</p>
+            
             </div>
             <div class="my-auto">
                 <a href="{{ route('contact') }}">
-                    <button class="btn-book-cleaning mb-3 md:mb-0">Book a Cleaning</button>
+                    <button class="btn-book-cleaning font-semibold mb-3 md:mb-0">Book a Cleaning!</button>
                 </a>
             </div>
         </div>
     </div>
     <!-- SUSCRIBE -->
     <div class="bg-clear1">
-        <div class="w-full text-center text-slate-100">
+        <div class="bg-clear1-green w-full text-center text-slate-100">
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <h1 class="text-3xl">Join PureStart Newsletter</h1>
+            <h1 class="text-3xl join-new">Join PureStart Newsletter</h1>
             <h1 class="dont-miss text-lg mt-3">
                 Don’t miss exclusive discounts and cleaning tips &
-                tricks. Joy delivered right to your inbox. 
+                tricks. <br /> Joy delivered right to your inbox. 
             </h1>
         </div>
     </div>
@@ -75,12 +86,14 @@
     </div>
 
     <div class="bg-primary-light p-3 w-full">
-        <marquee class="lg:text-lg" scrollamount="10">
-            <p class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</p>
-            <p class="inline-block">~</p>
-            <p class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</p>
-            <p class="inline-block">~</p>
-            <p class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</p>
+        <marquee class="lg:text-lg inquire" scrollamount="10">
+            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
+            <p class="inline-block mx-3">•</p>
+            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <p class="inline-block mr-3">•</p>
+            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <p class="inline-block mx-3">•</p>
+            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
         </marquee>
     </div>
 @endsection
