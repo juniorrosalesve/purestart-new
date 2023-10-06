@@ -8,9 +8,16 @@
 
     <!-- CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     @vite('resources/css/app.css')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 </head>
 <body class="w-full">
     <div class="bg-primary-light p-3 w-full">
@@ -27,10 +34,10 @@
     <!-- MENU -->
     <div class="bg-secondary p-5 hidden md:block">
         <div class="flex">
-            <div>
+            <div class="mr-3">
                 <img src="./images/purestart_logo2.png" onclick="location.href='{{ route('home') }}'" alt="purestart-logo" class="w-44 cursor-pointer">
             </div>
-            <div class="flex justify-center my-auto">
+            <div class="flex justify-center mt-1 my-auto">
                 <ul class="menu uppercase text-lg mt-[55px]">
                     <li onclick="location.href='{{ route('home') }}'" @if (\Request::route()->getName() == 'home')
                         class="active"
@@ -44,7 +51,7 @@
                     {{-- <li>Reviews</li> --}}
                     <li onclick="location.href='{{ route('faq') }}'" @if (\Request::route()->getName() == 'faq')
                         class="active"
-                    @endif>Faq</li>
+                    @endif>Faq<span class="lowercase">s</span></li>
                     <li onclick="location.href='{{ route('contact') }}'" @if (\Request::route()->getName() == 'contact')
                         class="active"
                     @endif>Contact</li>
@@ -107,35 +114,35 @@
                 <div>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="@if (\Request::route()->getName() == 'home') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="{{ route('home') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                            <a href="{{ route('home') }}" class="uppercase relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Home
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="@if (\Request::route()->getName() == 'about') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="{{ route('about') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                            <a href="{{ route('about') }}" class="uppercase relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 About
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="@if (\Request::route()->getName() == 'services') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="{{ route('services') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                            <a href="{{ route('services') }}" class="uppercase relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Services
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="@if (\Request::route()->getName() == 'faq') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="{{ route('faq') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
-                                Faq
+                            <a href="{{ route('faq') }}" class="uppercase relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                                Faq<span class="lowercase">s</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="@if (\Request::route()->getName() == 'contact') bg-primary text-slate-100 @endif mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="{{ route('contact') }}" class="relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
+                            <a href="{{ route('contact') }}" class="uppercase relative roboto-light py-3 px-3 text-secondary text-left text-lg // flex items-center">
                                 Contact
                             </a>
                         </li>
@@ -171,9 +178,15 @@
             </div>
             <div class="my-10">
                 <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
+                    <li>
+                        <a href="https://www.instagram.com/purestartllc/" target="_blank">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Purestartllc/" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/PureStartllc" target="_blank">Twitter</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -250,17 +263,21 @@
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow">
                 <!-- Modal body -->
-                <div class="bg-secondary">
+                <form method="POST" action="{{ route('mail-suscribe') }}" class="bg-secondary" id="formModalSuscribe">
                     <img src="{{ asset('images/suscribe-image.png') }}" alt="image" class="mx-auto">
                     <div class="grid grid-cols-1 gap-2">
-                        <input type="text" class="input-suscribe-modal" placeholder="First Name">
-                        <input type="text" class="mt-3 md:mt-0 input-suscribe-modal" placeholder="Last Name">
-                        <input type="text" class="mt-3 md:mt-0 input-suscribe-modal" placeholder="Email Address">
+                        <input type="text" name="firstname" class="input-suscribe-modal" placeholder="Full Name">
+                        {{-- <input type="text" name="lastname" class="mt-3 md:mt-0 input-suscribe-modal" placeholder="Last Name"> --}}
+                        <input type="text" name="email" class="mt-3 md:mt-0 input-suscribe-modal" placeholder="Email Address">
                     </div>
                     <div class="flex justify-center mt-2">
-                        <button type="button" class="btn-suscribe-modal uppercase bg-[#55957a]">Suscribe</button>
+                        <button type="button" class="btn-suscribe-modal uppercase bg-[#55957a]" id="formModalSuscribeBtn">Subscribe</button>
                     </div>
                     <br />
+                </form>
+                <div class="text-center my-10 hidden" id="formModalSuscribeInfo">
+                    <h1 class="text-lg lato-light">You have successfully subscribed, we will register the 10% discount in your email when we contact you.</h1>
+                    <h1 class="text-2xl lato-regular">Thank you!</h1>
                 </div>
             </div>
         </div>
@@ -272,10 +289,31 @@
         const modal     =   () => {
             new Modal(document.getElementById('suscribeModal'), null).show();
         };
-        modal();
-        // icon.addEventListener('click', () => {
-        //     modal.hide();
-        // });
+        if(Cookies.get('offert') == undefined) {
+            modal();
+            Cookies.set('offert', 'anti-spam', { expires: 365 })
+        }
+
+        document.getElementById('formModalSuscribe').addEventListener('submit', function() {
+            event.preventDefault();
+            document.getElementById('formModalSuscribeBtn').innerHTML  =   'Loading...';
+            document.getElementById('formModalSuscribeBtn').disabled   =   true;
+            axios.post('{{ route('mail-suscribe') }}', {
+                firstname: this.elements.firstname.value,
+                lastname: this.elements.lastname.value,
+                email: this.elements.email.value
+            })
+            .then(function (res) {
+                if(res.data == 1) {
+                    document.getElementById('formModalSuscribe').classList.add('hidden');
+                    document.getElementById('formModalSuscribeInfo').classList.remove('hidden');
+                }
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        });
+        AOS.init();
     </script>
 </body>
 </html>

@@ -13,20 +13,22 @@
                     <li class="relative float-none border-b-[1px] bg-pinklight // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                         <a href="javascript:void(0)" class="roboto-light relative py-3 px-3 text-secondary text-left text-lg // flex items-center">
                             {{-- <img src="./images/icon-menu/cupcake.png" class="float-left w-10 mr-2"> --}}
-                            Detergent
+                            No category
                         </a>
                     </li>
-                    <li class="relative float-none border-b-[1px] bg-pinklight // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                    {{-- <li class="relative float-none border-b-[1px] bg-pinklight // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
                         <a href="javascript:void(0)" class="roboto-light relative py-3 px-3 text-secondary text-left text-lg // flex items-center">
-                            {{-- <img src="./images/icon-menu/can.png" class="float-left w-10 mr-2">  --}}
+                            <img src="./images/icon-menu/can.png" class="float-left w-10 mr-2"> 
                             Category 2
                         </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
-            <div class="w-11/12 md:w-8/12 lg:w-9/12 mx-auto p-5">
-                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 place-content-center">
-                    @for ($i = 0; $i < 3; $i++)
+            <div class="w-11/12 md:w-8/12 lg:w-9/12 mx-auto p-5 min-h-[300px]">
+                <!-- sm:grid-cols-3 lg:grid-cols-4 -->
+                <div class="grid grid-cols-1 gap-4 place-content-center">
+                    <h1 class="w-full mx-auto md:w-[60%] mt-3 lato-light text-2xl">New Products will be loaded soon</h1>
+                    {{-- @for ($i = 0; $i < 3; $i++)
                         <div class="relative bg-pastel rounded-md p-3 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)] hover:drop-shadow-[0px_0px_3px_rgba(0,0,0,0.18)]">
                             <div class="w-full flex justify-center items-center mb-2">
                                 <img src="./images/productos/ariel.png" class="mx-auto max-h-[250px] min-w-full w-auto md:cursor-zoom-in preview">
@@ -105,7 +107,7 @@
                                 </div>
                             </form>
                         </div>
-                    @endfor
+                    @endfor --}}
                 </div>
             </div>
         </div>

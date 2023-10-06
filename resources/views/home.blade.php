@@ -3,17 +3,15 @@
     <!-- WELCOME -->
     <div class="py-10 px-3 md:p-12 bg-primary">
         <div class="md:flex md:justify-between">
-            <div>
-                <h1 class="uppercase welcome text-2xl md:ml-10 md:mt-5 text-slate-100">
-                    Welcome! <br />
-                    Ready for a <br />
-                    clean space?
-                </h1>
+            <div data-aos="fade-right">
+                <h1 class="uppercase welcome text-[44px] md:ml-10 md:mt-5 text-slate-100">Welcome!</h1>
+                <h1 class="uppercase welcome text-2xl md:ml-10 md:mt-5 text-slate-100">Ready for a</h1>
+                <h1 class="uppercase welcome text-[20px] md:ml-10 md:mt-5 text-slate-100">clean space?</h1>
             </div>
             <div>
                 <div class="bg-tag1 -mt-28 md:-mt-0 absolute right-0">
                     {{-- <img src="./images/tag1.png" alt="tag-1"> --}}
-                    <h1 class="text-center text-lg xl:text-2xl">
+                    <h1 class="text-center text-lg xl:text-2xl ">
                         LICENSED <br />& <br /> INSURED
                     </h1>
                 </div>
@@ -74,13 +72,20 @@
     </div>
     <div class="bg-primary">
         <br />
-        <div class="grid grid-cols-1 justify-center mx-3 md:gap-3 md:grid-cols-3 md:justify-evenly">
-            <input type="text" class="input-suscribe" placeholder="First Name">
-            <input type="text" class="mt-3 md:mt-0 input-suscribe" placeholder="Last Name">
-            <input type="text" class="mt-3 md:mt-0 input-suscribe" placeholder="Email Address">
-        </div>
-        <div class="flex justify-center mt-10">
-            <button type="button" class="btn-suscribe uppercase bg-[#55957a]">Suscribe</button>
+        <form action="{{ route('mail-suscribe') }}" method="POST" id="suscribe_form_home">
+            @csrf
+            <div class="grid grid-cols-1 justify-center mx-3 md:gap-3 md:grid-cols-2 md:justify-evenly">
+                <input type="text" name="firstname" class="input-suscribe" placeholder="Full Name">
+                {{-- <input type="text" name="lastname" class="mt-3 md:mt-0 input-suscribe" placeholder="Last Name"> --}}
+                <input type="text" name="email" class="mt-3 md:mt-0 input-suscribe" placeholder="Email Address">
+            </div>
+            <div class="flex justify-center mt-10">
+                <button type="button" class="btn-suscribe uppercase bg-[#55957a]" id="btn_suscribe_home">Subscribe</button>
+            </div>
+        </form>
+        <div class="text-center my-10 hidden" id="suscribe_page_home">
+            <h1 class="text-lg lato-light">You have successfully subscribed, we will register the 10% discount in your email when we contact you.</h1>
+            <h1 class="text-2xl lato-regular">Thank you!</h1>
         </div>
         <br /><br /> 
     </div>
@@ -96,4 +101,26 @@
             <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
         </marquee>
     </div>
+
+    <script>
+        document.getElementById('suscribe_form_home').addEventListener('submit', function() {
+            event.preventDefault();
+            document.getElementById('btn_suscribe_home').innerHTML  =   'Loading...';
+            document.getElementById('btn_suscribe_home').disabled   =   true;
+            axios.post('{{ route('mail-suscribe') }}', {
+                firstname: this.elements.firstname.value,
+                lastname: this.elements.lastname.value,
+                email: this.elements.email.value
+            })
+            .then(function (res) {
+                if(res.data == 1) {
+                    document.getElementById('suscribe_form_home').classList.add('hidden');
+                    document.getElementById('suscribe_page_home').classList.remove('hidden');
+                }
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        });
+    </script>
 @endsection

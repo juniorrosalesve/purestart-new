@@ -2,16 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\MailController;
 
 Route::get('/', function () {
     return view('home');
@@ -36,3 +27,6 @@ Route::get('shop', function() {
 Route::get('contact', function() {
     return view('contact');
 })->name('contact');
+
+Route::post('mail/contact', [MailController::class, 'contact'])->name('mail-contact');
+Route::post('mail/suscribe', [MailController::class, 'suscribe'])->name('mail-suscribe');
