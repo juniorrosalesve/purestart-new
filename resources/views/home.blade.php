@@ -4,14 +4,14 @@
     <div class="py-10 px-3 md:p-12 bg-primary">
         <div class="md:flex md:justify-between">
             <div data-aos="fade-right">
-                <h1 class="uppercase welcome text-[44px] md:ml-10 md:mt-5 text-slate-100">Welcome!</h1>
-                <h1 class="uppercase welcome text-2xl md:ml-10 md:mt-5 text-slate-100">Ready for a</h1>
-                <h1 class="uppercase welcome text-[20px] md:ml-10 md:mt-5 text-slate-100">clean space?</h1>
+                <h1 class="uppercase welcome text-[30px] md:text-[44px] md:ml-10 md:mt-5 text-slate-100">Welcome!</h1>
+                <h1 class="uppercase welcome text-[26px] md:text-2xl md:ml-10 md:mt-5 text-slate-100">Ready for a</h1>
+                <h1 class="uppercase welcome text-[25px] md:text-[20px] md:ml-10 md:mt-5 text-slate-100">clean space?</h1>
             </div>
             <div>
                 <div class="bg-tag1 -mt-28 md:-mt-0 absolute right-0">
                     {{-- <img src="./images/tag1.png" alt="tag-1"> --}}
-                    <h1 class="text-center text-lg xl:text-2xl ">
+                    <h1 class="text-center text-xs md:text-lg xl:text-2xl ">
                         LICENSED <br />& <br /> INSURED
                     </h1>
                 </div>
