@@ -16,7 +16,7 @@ class MailController extends Controller
         $check  =   Suscribe::where('email', $r->email)->first();
         if(!empty($check))
             return 0;
-        Mail::to('juniorrosales1908@gmail.com')->queue(new ContactMail(
+        Mail::to('purestartllc@gmail.com ')->queue(new ContactMail(
             $r->except('_token'),
             'suscribe'
         ));
@@ -24,7 +24,7 @@ class MailController extends Controller
         return 1;
     }
     public function contact(Request $r) {
-        Mail::to('juniorrosales1908@gmail.com')->queue(new ContactMail(
+        Mail::to('purestartllc@gmail.com ')->queue(new ContactMail(
             $r->except('_token'),
             'contact'
         ));
