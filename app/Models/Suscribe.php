@@ -11,7 +11,6 @@ class Suscribe extends Model
 
     protected $fillable     =   [
         'firstname',
-        'lastname',
         'email'
     ];
 }

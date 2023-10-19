@@ -7,9 +7,9 @@
 
 @if($type == 'suscribe')
 @component('mail::table')
-| Firstname | Lastname | Email |
+| Fullname | Email |
 | ---- |:-----:| -----:|
-| {{ $data['firstname'] }}      | {{ $data['lastname'] }}      | {{ $data['email'] }}   |
+| {{ $data['firstname'] }}      | {{ $data['email'] }}   |
 @endcomponent
 @else
 @component('mail::table')

@@ -27,6 +27,3 @@ Route::get('shop', function() {
 Route::get('contact', function() {
     return view('contact');
 })->name('contact');
-
-Route::post('mail/contact', [MailController::class, 'contact'])->name('mail-contact');
-Route::post('mail/suscribe', [MailController::class, 'suscribe'])->name('mail-suscribe');
