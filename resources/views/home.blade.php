@@ -68,14 +68,14 @@
             <br />
             <form action="{{ route('mail-suscribe') }}" method="POST" id="suscribe_form_home">
                 @csrf
-                <div class="ml-20">
-                    <p class="text-slate-200 text-center w-[50%] text-lg mb-3 lato-regular text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">Live the purestart experience by subscribing</p>
-                    <div class="grid grid-cols-1 md:grid grid-cols-2">
+                <div class="p-4 md:p-0 md:ml-20">
+                    <p class="text-slate-200 text-center md:w-[50%] text-lg mb-3 lato-regular text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">Live the purestart experience by subscribing</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2">
                         <div>
                             <input type="text" name="firstname" class="input-suscribe mb-2" placeholder="Enter your full name" data-aos="fade-right" data-aos-duration="1250">
                             <input type="text" name="email" class="mt-3 input-suscribe" placeholder="Enter your email address" data-aos="fade-right" data-aos-duration="1250">
                         </div>
-                        <div class="flex justify-center">
+                        <div class="md:flex md:justify-center mt-10">
                             <button type="submit" class="btn-suscribe bg-white" id="btn_suscribe_home" data-aos="zoom-in" data-aos-duration="1250">Subscribe</button>
                         </div>
                     </div>
