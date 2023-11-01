@@ -1,21 +1,23 @@
 @extends('layouts.theme')
 @section('body')
-    <section id="home">
+    <section id="home" class="bg-secondary">
         <!-- WELCOME -->
         <div class="py-10 px-3 md:p-20 bg-primary">
             <div>
-                <div class="text-center">
-                    <h1 class="uppercase welcome text-slate-100 text-5xl" data-aos="zoom-in" data-aos-duration="1250">Welcome!</h1>
-                    <h1 class="uppercase welcome text-slate-100 mt-4 text-2xl" data-aos="zoom-in" data-aos-duration="2000">Ready for a clean space?</h1>
+                <div class="ml-10">
+                    <h1 class="abril text-slate-100" style="font-size:60px;" data-aos="zoom-in" data-aos-duration="1250">
+                        Welcome!
+                    </h1>
+                    <h1 class="lato-thin italic text-slate-100" style="font-size:30px;" data-aos="zoom-in" data-aos-duration="2000">
+                        Ready for a CLEAN space?
+                    </h1>
                 </div>
-            </div>
-            <div class="relative">
-                <img src="{{ asset('images/licensed.png') }}" alt="licensed" class="hidden md:block w-[350px] absolute right-0 -mr-10" style="transform: rotate(45deg);top:-100px;" data-aos="zoom-in" data-aos-duration="1250">
             </div>
         </div>
         <!-- WE ARE -->
-        <div>
-            <div class="text-center md:text-left mt-3 md:mt-10 md:ml-20">
+        <div class="bg-pastel">
+            <br /> 
+            <div class="text-center md:text-left md:ml-20">
                 <div class="text-center max-w-[700px]">
                     <h1 class="we-are-cleaning text-3xl font-semibold">
                         WE ARE A CLEANING COMPANY
@@ -54,24 +56,24 @@
             </div>
         </div>
         <!-- SUSCRIBE -->
-        <div class="bg-clear1">
-            <div class="bg-clear1-green w-full text-center text-slate-100">
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <h1 class="text-3xl join-new">Join PureStart Newsletter</h1>
-                <h1 class="dont-miss text-lg mt-3">
-                    Don’t miss exclusive discounts and cleaning tips &
-                    tricks. <br /> Joy delivered right to your inbox. 
-                </h1>
-            </div>
-        </div>
+        <video class="w-full" loop autoplay muted>
+            <source src="{{ asset('images/mesa.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="bg-primary py-10">
             <br />
             <form action="{{ route('mail-suscribe') }}" method="POST" id="suscribe_form_home">
                 @csrf
                 <div class="p-4 md:p-0 md:ml-20">
-                    <p class="text-slate-200 text-center md:w-[50%] text-lg mb-3 lato-regular text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">Live the purestart experience by subscribing</p>
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div>
+                            <h1 class="text-slate-200 text-center text-2xl abril text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">
+                                Join PureStart Newsletter
+                            </h1>
+                            <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3">
+                                Don’t miss exclusive discounts and cleaning tips &
+                                tricks. <br /> Joy delivered right to your inbox. 
+                            </h1>
                             <input type="text" name="firstname" class="input-suscribe mb-2" placeholder="Enter your full name" data-aos="fade-right" data-aos-duration="1250">
                             <input type="text" name="email" class="mt-3 input-suscribe" placeholder="Enter your email address" data-aos="fade-right" data-aos-duration="1250">
                         </div>

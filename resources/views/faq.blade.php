@@ -1,46 +1,18 @@
-<div class="conejo">
-    <h1 class="title_about text-pastel my-auto p-3 md:p-0 text-2xl md:text-4xl">FREQUENTLY ASKED QUESTIONS</h1>
-    <div class="hidden md:block bunny-container -mt-3 -mr-5">
-        <div class="bunny">
-            <div class="bunny__ears">
-                <div class="bunny__ear bunny__ear--left"></div>
-                <div class="bunny__ear bunny__ear--right"></div>
-            </div>
-            <div class="bunny__feet">
-                <div class="bunny__foot bunny__foot--left"></div>
-                <div class="bunny__foot bunny__foot--right"></div>
-            </div>
-            <div class="bunny__tail"></div>
-            <div class="bunny__paw"></div>
-            <div class="bunny__body">
-                <div class="bunny__eyes"></div>
-                <div class="bunny__nose"></div>
-                <div class="bunny__cheeks"></div>
-                <div class="bunny__mouth"></div>
-            </div>
-        </div>
-    </div>
-    <div class="hidden md:block bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
+<div class="h-[180px] wrapper bg-primary italic">
+    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel">
+        Frequently Asked <br /> 
+        <span class="lato-thin">
+            @for ($i = 0; $i < 20; $i++)
+                &nbsp;
+            @endfor
+            Questions
+        </span>
+    </h1>
+    @for ($i = 1; $i < 10; $i++)
+        <div><span class="dot"></span></div>
+    @endfor
 </div>
+<br /><br /><br /><br /><br />
 <div class="md:flex md:justify-between bg-pastel p-20 faq-text">
     <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
         <p>How long will the walkthrough take?</p>

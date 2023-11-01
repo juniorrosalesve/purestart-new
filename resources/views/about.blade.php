@@ -6,9 +6,13 @@
         --swiper-theme-color: #66c485;
     }
 </style>
-{{-- <div class="bg-white text-center py-2 md:p-10 w-full">
-    <h1 class="text-4xl title_about md:w-[60%] mx-auto">REAL CLEANING THAT BRINGS JOY!</h1>
-</div> --}}
+<div class="h-[200px] md:h-[140px] wrapper bg-secondary">
+    <h1 class="w-full text-2xl md:text-5xl abril text-center text-[#06446c]">We are a cleaning company that actually cleans!</h1>
+    @for ($i = 1; $i < 10; $i++)
+        <div><span class="dot"></span></div>
+    @endfor
+</div>
+<br /><br /><br /><br /><br /><br />
 {{-- <div class="bg-secondary w-full" style="z-index: 100;">
     <br /> 
     <div class="w-full text-center mb-60">
@@ -27,12 +31,18 @@
     <br />
 </div> --}}
 
-<div class="grid grid-cols-1 md:grid-cols-2 bg-white md:max-h-[1000px]">
-    <div>
+<div class="grid grid-cols-1 md:grid-cols-2 bg-white md:max-h-[1000px] -mt-1">
+    <div class="md:hidden">
         <img src="{{ asset('images/valentina-photo.png') }}" class="w-[100%]" alt="valentina-photo">
     </div>
-    <div class="w-[90%] mt-10 mx-auto md:ml-8">
-        <h1 class="text-4xl mb-10 profile" data-aos="fade-in" data-aos-duration="1250">MEET THE OWNER</h1>
+    <div class="md:block image-container h-auto bg-cover bg-center relative">
+        <div class="overlay"></div>
+    </div>
+    <div class="w-[90%] mx-auto md:ml-8">
+        <h1 class="text-4xl mt-6 mb-10 abril italic text-[#06446c]" data-aos="fade-in" data-aos-duration="1250">
+            Meet <br />
+            <span class="lato-thin">&nbsp;&nbsp;&nbsp;&nbsp;The Owner</span>
+        </h1>
         <p class="profile text-2xl" data-aos="fade-in" data-aos-duration="1250">Hey, I’m Valentina. I am a citrus lover, sport obhsessed and an art and craft genius.</p>
         <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">I decided to create PURESTART in light of te fact of my desire and motivation to dive into the entrepreneurial world. </p>
         <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">Currently using my corporate background, my experience in customer service, and my passion for cleaning, for my business.</p>
@@ -42,7 +52,6 @@
         <h1 class="text-3xl mt-10 mb-10 md:mb-36 md:mt-10 text-center profile" style="letter-spacing: 3px;" data-aos="fade-up" data-aos-duration="1250">It is a great pleasure to meet you!</h1>
     </div>
 </div>
-
 <div class="bg-[#417d67] relative">
     <div class="swiper mySwiper absolute top-[30%] w-full">
         <div class="swiper-wrapper mb-7 md:mb-10">
@@ -111,7 +120,7 @@
     <img src="{{ asset('images/reviews.png') }}" alt="reviews" class="w-full h-[530px] lg:h-[700px]">
 </div>
 
-<div class="bg-primary h-auto md:h-72 z-10">
+<div class="bg-secondary h-auto md:h-72 z-10">
     <br />
     <h1 class="text-5xl our-values mb-4 text-center">OUR VALUES</h1>
     <div class="w-[100%] xl:w-[90%] mx-auto">

@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body class="w-full">
+<body>
     <div class="bg-primary-light p-3 w-full">
         <marquee class="lg:text-lg inquire" scrollamount="10">
             <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
@@ -78,7 +78,7 @@
             </ul>
         </div>
     </div>
-    <div class="bg-white shadow-lg p-2 w-full sticky top-0 md:hidden" style="z-index: 49;">
+    <div class="bg-secondary shadow-lg p-2 w-full sticky top-0 md:hidden" style="z-index: 49;">
         <div class="flex w-full justify-between">
             <div class="my-auto mr-3">
                 <a href="javascript:void(0)" type="button" data-drawer-target="menu-responsive" data-drawer-show="menu-responsive" aria-controls="menu-responsive" class="inline-flex items-center // text-2xl font-normal text-slate-800">
@@ -161,7 +161,7 @@
     @yield('body')
 
     <!-- FOOTER -->
-    <footer class="bg-secondary">
+    <footer class="bg-secondary z-10">
         <div class="flex justify-around legend-footer-text mx-3 text-lg md:mx-0 md:text-3xl">
             <div class="my-10 md:-ml-10">
                 <ul>
@@ -266,7 +266,7 @@
     <!-- Main modal -->
     <div id="suscribeModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative">
-            <video playsinline autoplay muted loop style="border-radius: 15px;">
+            <video playsinline autoplay muted loop style="border-radius: 15px;" class="video-tag">
                 <source src="{{ asset('images/bg_stars.mp4') }}" type="video/mp4">
             </video>
             <!-- Modal content -->

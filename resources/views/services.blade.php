@@ -1,6 +1,12 @@
-{{-- <div class="bg-primary p-8">
-    <h1 class="text-3xl md:text-5xl title_about text-center">WE ENJOY CLEANING</h1>
-</div> --}}
+<div class="h-[120px] wrapper bg-primary italic">
+    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel">
+        What We <span class="lato-thin">Clean</span>
+    </h1>
+    @for ($i = 1; $i < 10; $i++)
+        <div><span class="dot"></span></div>
+    @endfor
+</div>
+<br /><br /><br /><br /><br />
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="w-full bg-icon-edificio"></div>
     <div class="md:flex md:justify-center items-center bg-[#e6f8f1]">
@@ -37,14 +43,16 @@
         </div>
     </div>
 </div>
-<div class="py-10 wrapper">
-    <h1 class="text-3xl md:text-5xl title_about text-center">OUR SERVICES</h1>
+<div class="h-[120px] wrapper bg-primary italic">
+    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel">
+        Our <span class="lato-thin">Services</span>
+    </h1>
     @for ($i = 1; $i < 10; $i++)
         <div><span class="dot"></span></div>
     @endfor
 </div>
+<br /><br /><br /><br />
 <div class="bg-pastel p-10">
-    <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="md:flex md:justify-between md:mx-20">
         <div class="my-auto">
             <div class="md:flex">

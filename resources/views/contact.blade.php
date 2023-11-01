@@ -1,8 +1,18 @@
-<div class="bg-primary text-center py-20 w-full">
-    <h1 class="text-3xl md:text-4xl title_about text-pastel">DROP US A LINE. <br /> WE WILL GET BACK TO YOU SOON!</h1>
+<div class="h-[150px] md:h-[210px] py-10 wrapper bg-primary italic">
+    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel -mt-3">
+        Drop Us A Line!  <br /> 
+        <span class="lato-thin">
+            We will get back to you soon!!
+        </span>
+    </h1>
 </div>
-<div class="bg-contact">
-    <form action="{{ route('mail-contact') }}" method="POST" class="bg-contact-green" id="contactUsMail">
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div class="bg-contact -mt-5">
+    <video class="bg-video-contact w-full" loop autoplay muted playsinline>
+        <source src="{{ asset('images/llave.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <form action="{{ route('mail-contact') }}" method="POST" class="bg  -contact-green" id="contactUsMail">
         <div class="grid grid-cols-1 w-[90%] md:w-[50%] mx-auto" id="contact_inputs">
             <input type="text" name="name" class="mt-10 input-contact" placeholder="Full Name" data-aos="fade-in" data-aos-duration="1250">
             <input type="text" name="business" class="mt-5 input-contact" placeholder="Business Name" data-aos="fade-in" data-aos-duration="1250">
@@ -25,7 +35,6 @@
         </div>
     </form>
 </div>
-
 <script>
     document.getElementById('contactUsMail').addEventListener('submit', function() {
         event.preventDefault();

@@ -154,10 +154,18 @@ body {
 }
 
 .bg-contact {
-    background-image: url('./images/bg-contact.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 500px; /* Asegúrate de que el contenedor tenga una altura máxima */
+}
+.bg-video-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir completamente el contenedor */
+    z-index: -1; /* Coloca el video detrás del contenido */
 }
 .bg-contact-green {
     background-color: rgba(38, 64, 53, 0.5);
@@ -299,6 +307,9 @@ body {
 .lato-bold {
     font-family: lato_bold;
 }
+.abril {
+    font-family: abril;
+}
 
 .text-primary {
     color:var(--primary);
@@ -309,6 +320,9 @@ body {
 .text-pastel {
     color:var(--pastel);
 }
+.text-primary-light {
+    color:var(--primary-light);
+}
 
 .inquire {
     letter-spacing: 12px;
@@ -317,9 +331,6 @@ body {
 .multi-regular {
     font-family: multi_regular;
     letter-spacing: 2px;
-}
-.welcome {
-    font-family: lato_regular;
 }
 .we-are-cleaning {
     font-family: lato_light;
@@ -357,7 +368,6 @@ body {
 
 .title_about {
     font-family: lato_bold;
-    letter-spacing: 10px;
     text-align: center;
 }
 .arco-women {
@@ -377,11 +387,11 @@ body {
 }
 .our-values {
     font-family: lato_thin;
-    color:var(--pastel);
+    color:#000;
 }
 .our-values-text {
     font-family: lato_thin;
-    color:var(--pastel);
+    color:#000;
     letter-spacing: 10px;
 }
 
@@ -523,14 +533,11 @@ li {
     font-family: tiffany;
     src: url(fonts/AdobeHandwriting-Tiffany.ttf);
 }
-
-
-@media (min-width:1280px){
-    .welcome {
-        letter-spacing: 24px;
-        line-height: 24px;
-    }
+@font-face {
+    font-family: abril;
+    src: url(fonts/AbrilFatface-Regular.ttf);
 }
+
 
 .menu-svg path {
     stroke: #ffffff; /* Background color against your svg */
@@ -550,7 +557,7 @@ li {
     min-width: 100px;
 }
 
-video {
+.video-tag {
     min-height: 100%;
     min-width: 100%;
     width: auto;
@@ -582,3 +589,20 @@ video {
     right: -30px;
     top:70px;
 }
+
+.image-container {
+    background-image: url('images/valentina-photo.png');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+  }
