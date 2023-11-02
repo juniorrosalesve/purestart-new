@@ -6,7 +6,7 @@
             <div>
                 <div class="ml-10">
                     <h1 class="abril text-slate-100" style="font-size:90px;" data-aos="fade-right" data-aos-duration="1250">
-                        Welcome!
+                        Welcome!!
                     </h1>
                     <h1 class="lato-thin italic text-slate-100" style="font-size:35px;" data-aos="fade-right" data-aos-duration="2000">
                         Ready for a CLEAN space?
