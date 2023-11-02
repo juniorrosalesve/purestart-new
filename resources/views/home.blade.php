@@ -5,13 +5,16 @@
         <div class="py-10 px-3 md:p-20 bg-primary">
             <div>
                 <div class="ml-10">
-                    <h1 class="abril text-slate-100" style="font-size:60px;" data-aos="zoom-in" data-aos-duration="1250">
+                    <h1 class="abril text-slate-100" style="font-size:60px;" data-aos="fade-right" data-aos-duration="1250">
                         Welcome!
                     </h1>
-                    <h1 class="lato-thin italic text-slate-100" style="font-size:30px;" data-aos="zoom-in" data-aos-duration="2000">
+                    <h1 class="lato-thin italic text-slate-100" style="font-size:30px;" data-aos="fade-right" data-aos-duration="2000">
                         Ready for a CLEAN space?
                     </h1>
                 </div>
+            </div>
+            <div>
+                <div class="circle license-in source text-lg text-[#82f5a8] font-semibold" data-aos="zoom-in" data-aos-duration="1250"></div>
             </div>
         </div>
         <!-- WE ARE -->
@@ -70,7 +73,7 @@
                             <h1 class="text-slate-200 text-center text-2xl abril text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">
                                 Join PureStart Newsletter
                             </h1>
-                            <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3">
+                            <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3" data-aos="zoom-in" data-aos-duration="1250">
                                 Don’t miss exclusive discounts and cleaning tips &
                                 tricks. <br /> Joy delivered right to your inbox. 
                             </h1>
@@ -119,29 +122,16 @@
         </marquee>
     </div>
 
+    <script src="{{ asset('circleText.js') }}"></script>
+
     <script>
-        document.getElementById('suscribe_form_home').addEventListener('submit', function() {
-            event.preventDefault();
-            document.getElementById('btn_suscribe_home').innerHTML  =   'Loading...';
-            document.getElementById('btn_suscribe_home').disabled   =   true;
-            axios.post('{{ route('mail-suscribe') }}', {
-                firstname: this.elements.firstname.value,
-                email: this.elements.email.value
-            })
-            .then(function (res) {
-                if(res.data == 1) {
-                    document.getElementById('suscribe_form_home').classList.add('hidden');
-                    document.getElementById('suscribe_page_home').classList.remove('hidden');
-                }
-                else  
-                    document.getElementById('btn_suscribe_home').innerHTML  =   'This user already exists';
-                console.log(res);
-            })
-            .catch(function (error) {
-                console.log(error);
-                document.getElementById('btn_suscribe_home').innerHTML  =   'Oops an error occurred, retry';
-                document.getElementById('btn_suscribe_home').disabled   =   false;
-            });
+        $(".circle").circleText({
+            turn: true,
+            padding: 20,
+            radius: 70,
+            duration: 10,
+            repeat: 1,
+            background: "#FDFDF2"    
         });
     </script>
 @endsection

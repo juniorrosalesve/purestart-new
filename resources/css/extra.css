@@ -310,6 +310,10 @@ body {
 .abril {
     font-family: abril;
 }
+.source {
+    font-family: source;
+}
+
 
 .text-primary {
     color:var(--primary);
@@ -537,7 +541,10 @@ li {
     font-family: abril;
     src: url(fonts/AbrilFatface-Regular.ttf);
 }
-
+@font-face {
+    font-family: source;
+    src: url(fonts/SourceSans3-VariableFont_wght.ttf);
+}
 
 .menu-svg path {
     stroke: #ffffff; /* Background color against your svg */
@@ -602,7 +609,27 @@ li {
     height: 100%;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-  }
+.license-in {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    top: 320px;
+}
+
+.versailles {
+    font-family: 'Versailles', sans-serif; /* Cambia 'Versailles' por tu fuente deseada */
+    font-weight: bold;
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras según sea necesario */
+    text-transform: uppercase;
+}
+
+.div-off {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoVertical {
+    writing-mode: vertical-rl; /* Cambiado de vertical-rl a vertical-lr */
+    text-orientation: mixed;
+}

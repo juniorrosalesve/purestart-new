@@ -273,8 +273,12 @@
             <div class="w-[320px] md:w-[500px] sign three">
                 <div class="block">
                     <div id="formHideSubscribe">
-                        <h1 class="text-primary uppercase lato-regular text-lg md:text-4xl text-center">Special Offer</h1>
-                        <h1 class="text-dark uppercase lato-regular md:text-2xl text-center">10% OFF</h1>
+                        {{-- <h1 class="text-primary uppercase lato-regular text-lg md:text-4xl text-center">Special Offer</h1> --}}
+                        {{-- <h1 class="text-dark uppercase lato-regular md:text-2xl text-center">10% OFF</h1> --}}
+                        <div class="div-off">
+                            <h1 class="textoVertical lato-light text-lg">Take</h1>
+                            <h1 class="text-5xl lato-bold">10% Off</h1>
+                        </div>
                         <img src="{{ asset('images/join_pures.png') }}" alt="licensed">
                         <form method="POST" action="{{ route('mail-suscribe') }}" id="formModalSuscribe">
                             <div class="grid grid-cols-1 gap-2">
