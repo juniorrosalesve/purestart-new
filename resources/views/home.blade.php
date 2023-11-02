@@ -5,10 +5,10 @@
         <div class="py-10 px-3 md:p-20 bg-primary">
             <div>
                 <div class="ml-10">
-                    <h1 class="abril text-slate-100" style="font-size:60px;" data-aos="fade-right" data-aos-duration="1250">
+                    <h1 class="abril text-slate-100" style="font-size:90px;" data-aos="fade-right" data-aos-duration="1250">
                         Welcome!
                     </h1>
-                    <h1 class="lato-thin italic text-slate-100" style="font-size:30px;" data-aos="fade-right" data-aos-duration="2000">
+                    <h1 class="lato-thin italic text-slate-100" style="font-size:35px;" data-aos="fade-right" data-aos-duration="2000">
                         Ready for a CLEAN space?
                     </h1>
                 </div>
