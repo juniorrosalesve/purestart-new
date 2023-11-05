@@ -336,6 +336,29 @@
                     document.getElementById('formModalSuscribeInfo').classList.remove('hidden');
                 }
                 else  
+                    document.getElementById('formModalSuscribeBtn').innerHTML  =   'This user already exists';
+                console.log(res);
+            })
+            .catch(function (error) {
+                console.log(error);
+                document.getElementById('formModalSuscribeBtn').innerHTML  =   'Oops an error occurred, retry';
+                document.getElementById('formModalSuscribeBtn').disabled   =   false;
+            });
+        });
+        document.getElementById('suscribe_form_home').addEventListener('submit', function() {
+            event.preventDefault();
+            document.getElementById('btn_suscribe_home').innerHTML  =   'Loading...';
+            document.getElementById('btn_suscribe_home').disabled   =   true;
+            axios.post('{{ route('mail-suscribe') }}', {
+                firstname: this.elements.firstname.value,
+                email: this.elements.email.value
+            })
+            .then(function (res) {
+                if(res.data == 1) {
+                    document.getElementById('suscribe_form_home').classList.add('hidden');
+                    document.getElementById('suscribe_page_home').classList.remove('hidden');
+                }
+                else  
                     document.getElementById('btn_suscribe_home').innerHTML  =   'This user already exists';
                 console.log(res);
             })

@@ -65,7 +65,7 @@
         </video>
         <div class="bg-primary py-10">
             <br />
-            <form action="{{ route('mail-suscribe') }}" method="POST" id="suscribe_form_home">
+            <form method="POST" id="suscribe_form_home">
                 @csrf
                 <div class="p-4 md:p-0 md:ml-20">
                     <div class="grid grid-cols-1 md:grid-cols-2">
