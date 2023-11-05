@@ -14,14 +14,14 @@
     </video>
     <form action="{{ route('mail-contact') }}" method="POST" class="bg  -contact-green" id="contactUsMail">
         <div class="grid grid-cols-1 w-[90%] md:w-[50%] mx-auto" id="contact_inputs">
-            <input type="text" name="name" class="mt-10 input-contact" placeholder="Full Name" data-aos="fade-in" data-aos-duration="1250">
-            <input type="text" name="business" class="mt-5 input-contact" placeholder="Business Name" data-aos="fade-in" data-aos-duration="1250">
-            <input type="text" name="email" class="mt-5 input-contact" placeholder="Email Address" data-aos="fade-in" data-aos-duration="1250">
-            <input type="text" name="phone" class="mt-5 input-contact" placeholder="Phone Number" data-aos="fade-in" data-aos-duration="1250">
+            <input type="text" name="name" class="mt-10 input-contact" placeholder="Full Name" data-aos="fade-in" data-aos-duration="500">
+            <input type="text" name="business" class="mt-5 input-contact" placeholder="Business Name" data-aos="fade-in" data-aos-duration="500">
+            <input type="text" name="email" class="mt-5 input-contact" placeholder="Email Address" data-aos="fade-in" data-aos-duration="500">
+            <input type="text" name="phone" class="mt-5 input-contact" placeholder="Phone Number" data-aos="fade-in" data-aos-duration="500">
         </div>
         <div class="flex justify-center mt-10" id="btn_contact_container">
             <div>
-                <button type="submit" class="btn-contact uppercase bg-[#55957a]" id="btn_contact" data-aos="fade-up" data-aos-duration="1250">Submit</button>
+                <button type="submit" class="btn-contact uppercase bg-[#55957a]" id="btn_contact" data-aos="fade-up" data-aos-duration="500">Submit</button>
                 <br /><br />
             </div>
         </div>

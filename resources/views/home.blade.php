@@ -5,16 +5,16 @@
         <div class="py-10 px-3 md:p-20 bg-primary">
             <div>
                 <div class="ml-10">
-                    <h1 class="abril text-slate-100" style="font-size:90px;" data-aos="fade-right" data-aos-duration="1250">
+                    <h1 class="abril text-slate-100" style="font-size:90px;" data-aos="fade-right" data-aos-duration="500">
                         Welcome!!
                     </h1>
-                    <h1 class="lato-thin italic text-slate-100" style="font-size:35px;" data-aos="fade-right" data-aos-duration="2000">
+                    <h1 class="lato-thin italic text-slate-100" style="font-size:35px;" data-aos="fade-right" data-aos-duration="1200">
                         Ready for a CLEAN space?
                     </h1>
                 </div>
             </div>
             <div>
-                <div class="circle license-in source text-lg text-[#82f5a8] font-semibold" data-aos="zoom-in" data-aos-duration="1250"></div>
+                <div class="circle license-in source text-lg text-[#82f5a8] font-semibold" data-aos="zoom-in" data-aos-duration="500"></div>
             </div>
         </div>
         <!-- WE ARE -->
@@ -53,7 +53,7 @@
                 </div>
                 <div class="my-auto">
                     <a href="#contact">
-                        <button class="btn-book-cleaning font-semibold mb-3 md:mb-0" data-aos="zoom-in" data-aos-duration="1250">Book a Cleaning!</button>
+                        <button class="btn-book-cleaning font-semibold mb-3 md:mb-0" data-aos="zoom-in" data-aos-duration="500">Book a Cleaning!</button>
                     </a>
                 </div>
             </div>
@@ -70,18 +70,18 @@
                 <div class="p-4 md:p-0 md:ml-20">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div>
-                            <h1 class="text-slate-200 text-center text-2xl abril text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="1250">
+                            <h1 class="text-slate-200 text-center text-2xl abril text-pastel" style="letter-spacing: 3px" data-aos="zoom-in" data-aos-duration="500">
                                 Join PureStart Newsletter
                             </h1>
-                            <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3" data-aos="zoom-in" data-aos-duration="1250">
+                            <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3" data-aos="zoom-in" data-aos-duration="500">
                                 Don’t miss exclusive discounts and cleaning tips &
                                 tricks. <br /> Joy delivered right to your inbox. 
                             </h1>
-                            <input type="text" name="firstname" class="input-suscribe mb-2" placeholder="Enter your full name" data-aos="fade-right" data-aos-duration="1250">
-                            <input type="text" name="email" class="mt-3 input-suscribe" placeholder="Enter your email address" data-aos="fade-right" data-aos-duration="1250">
+                            <input type="text" name="firstname" class="input-suscribe mb-2" placeholder="Enter your full name" data-aos="fade-right" data-aos-duration="500">
+                            <input type="text" name="email" class="mt-3 input-suscribe" placeholder="Enter your email address" data-aos="fade-right" data-aos-duration="500">
                         </div>
                         <div class="md:flex md:justify-center mt-10">
-                            <button type="submit" class="btn-suscribe bg-white" id="btn_suscribe_home" data-aos="zoom-in" data-aos-duration="1250">Subscribe</button>
+                            <button type="submit" class="btn-suscribe bg-white" id="btn_suscribe_home" data-aos="zoom-in" data-aos-duration="500">Join</button>
                         </div>
                     </div>
                 </div>

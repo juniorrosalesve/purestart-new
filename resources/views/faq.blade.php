@@ -14,7 +14,7 @@
 </div>
 <br /><br /><br /><br /><br />
 <div class="md:flex md:justify-between bg-pastel p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>How long will the walkthrough take?</p>
     </div>
     <div class="my-auto mr-5 text-center">
@@ -22,7 +22,7 @@
     </div>
 </div>
 <div class="md:flex md:justify-between bg-secondary p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>Do you bring all your equipment and supplies?</p>
     </div>
     <div class="my-auto mr-5 text-center">
@@ -30,7 +30,7 @@
     </div>
 </div>
 <div class="md:flex md:justify-between bg-pastel  p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>Does your company carry insurance?</p>
     </div>
     <div class="my-auto mr-5 text-center">
@@ -38,7 +38,7 @@
     </div>
 </div>
 <div class="md:flex md:justify-between bg-secondary p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>What happens if we handle sensitive and confidential information at the office?</p>
     </div>
     <div class="my-auto mr-5 text-center">
@@ -46,7 +46,7 @@
     </div>
 </div>
 <div class="md:flex md:justify-between bg-pastel  p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>What will it cost?</p>
     </div>
     <div class="my-auto mr-5 text-center">
@@ -54,7 +54,7 @@
     </div>
 </div>
 <div class="md:flex md:justify-between bg-secondary p-20 faq-text">
-    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="1250">
+    <div class="mb-10 md:mb-0 italic min-w-[50%] ml-5 my-auto" data-aos="fade-right" data-aos-duration="500">
         <p>Do you run any discounts or referral programs?</p>
     </div>
     <div class="my-auto mr-5 text-center">

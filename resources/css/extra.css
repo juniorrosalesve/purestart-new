@@ -12,9 +12,9 @@ body::-webkit-scrollbar {
     width: 5px;
 }
 @media only screen and (max-width: 768px) {
-body::-webkit-scrollbar {
-    width: 0px;
-}
+    body::-webkit-scrollbar {
+        width: 0px;
+    }
 }
 body::-webkit-scrollbar-track {
     background: var(--secondary);
@@ -423,6 +423,17 @@ body {
     background-position: center;
     min-height: 500px;
 }
+@media only screen and (min-width: 1280px) {
+    .bg-icon-edificio {
+        min-height: 700px;
+    }
+    .bg-icon-garaje {
+        min-height: 700px;
+    }
+    .bg-icon-casa {
+        min-height: 700px;
+    }
+}
 .icon-color-white {
     filter: invert(98%) sepia(99%) saturate(6130%) hue-rotate(182deg) brightness(124%) contrast(96%);
     width:300px;
@@ -614,6 +625,12 @@ li {
     right: 0;
     margin-right: 100px;
     top: 330px;
+}
+@media only screen and (max-width: 900) {
+    .license-in {
+        top: 0px;
+        margin-right: 0px;
+    }
 }
 
 .versailles {

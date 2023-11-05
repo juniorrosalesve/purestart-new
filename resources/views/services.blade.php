@@ -10,7 +10,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="w-full bg-icon-edificio"></div>
     <div class="md:flex md:justify-center items-center bg-[#e6f8f1]">
-        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="1250">
+        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="500">
             <p>CORPORATE OFFICES</p>
             <p>LEASING OFFICES</p>
             <p>MEDICAL OFFICES</p>
@@ -22,7 +22,7 @@
 
     <div class="w-full bg-icon-garaje md:hidden"></div>
     <div class="md:flex md:justify-center items-center bg-[#e6f8f1]">
-        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="1250">
+        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="500">
             <p>VACANT UNITS</p>
             <p>WORKSPACES</p>
             <p>NEW CONSTRUCTION UNITS</p>
@@ -34,7 +34,7 @@
 
     <div class="w-full bg-icon-casa"></div>
     <div class="md:flex md:justify-center items-center bg-[#e6f8f1]">
-        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="1250">
+        <div class="service-info text-2xl my-2 mx-1 md:my-0 md:mx-0 md:w-[50%]" data-aos="fade-in" data-aos-duration="500">
             <p>REAL ESTATE LISTINGS</p>
             <p>MOVE IN/OUT CLEANINGS</p>
             <p>VACATION RENTALS</p>
@@ -104,7 +104,7 @@
         </div>
         <div class="mt-10 md:my-auto">
             <a href="#contact" class="mb-3 md:mb-0">
-                <button class="btn-book-cleaning" data-aos="fade-in" data-aos-duration="1250">Book a Cleaning!</button>
+                <button class="btn-book-cleaning" data-aos="fade-in" data-aos-duration="500">Book a Cleaning!</button>
             </a>
         </div>
     </div>

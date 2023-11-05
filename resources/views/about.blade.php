@@ -39,17 +39,17 @@
         <div class="overlay"></div>
     </div>
     <div class="w-[90%] mx-auto md:ml-8">
-        <h1 class="text-4xl mt-6 mb-10 abril italic text-[#06446c]" data-aos="fade-in" data-aos-duration="1250">
+        <h1 class="text-4xl mt-6 mb-10 abril italic text-[#06446c]" data-aos="fade-in" data-aos-duration="500">
             Meet <br />
             <span class="lato-thin">&nbsp;&nbsp;&nbsp;&nbsp;The Owner</span>
         </h1>
-        <p class="profile text-2xl" data-aos="fade-in" data-aos-duration="1250">Hey, I’m Valentina. I am a citrus lover, sport obhsessed and an art and craft genius.</p>
-        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">I decided to create PURESTART in light of te fact of my desire and motivation to dive into the entrepreneurial world. </p>
-        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">Currently using my corporate background, my experience in customer service, and my passion for cleaning, for my business.</p>
-        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">I grew up with high standards of cleaning.</p>
-        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">My home was always in order. I was taught step by step how to wash the dishes, specially if eggs were part of the meal. I watched my mom making the beds with such a technic. She would also iron sheets and towels! I know, kind of  crazy!! But I have to admit, they would look different once stored. </p>
-        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="1250">For all of the above, I took the leap of faith to make this project happen and it has been the greatest adventure yet. I absolutely love what I do, and what I do it for. I cant wait to meet you and have you as part of my happy customers!!   </p>
-        <h1 class="text-3xl mt-10 mb-10 md:mb-36 md:mt-10 text-center profile" style="letter-spacing: 3px;" data-aos="fade-up" data-aos-duration="1250">It is a great pleasure to meet you!</h1>
+        <p class="profile text-2xl" data-aos="fade-in" data-aos-duration="500">Hey, I’m Valentina. I am a citrus lover, sport obhsessed and an art and craft genius.</p>
+        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">I decided to create PURESTART in light of te fact of my desire and motivation to dive into the entrepreneurial world. </p>
+        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">Currently using my corporate background, my experience in customer service, and my passion for cleaning, for my business.</p>
+        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">I grew up with high standards of cleaning.</p>
+        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">My home was always in order. I was taught step by step how to wash the dishes, specially if eggs were part of the meal. I watched my mom making the beds with such a technic. She would also iron sheets and towels! I know, kind of  crazy!! But I have to admit, they would look different once stored. </p>
+        <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">For all of the above, I took the leap of faith to make this project happen and it has been the greatest adventure yet. I absolutely love what I do, and what I do it for. I cant wait to meet you and have you as part of my happy customers!!   </p>
+        <h1 class="text-3xl mt-10 mb-10 md:mb-36 md:mt-10 text-center profile" style="letter-spacing: 3px;" data-aos="fade-up" data-aos-duration="500">It is a great pleasure to meet you!</h1>
     </div>
 </div>
 <div class="bg-[#417d67] relative">
