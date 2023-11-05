@@ -335,8 +335,10 @@
                     document.getElementById('formHideSubscribe').classList.add('hidden');
                     document.getElementById('formModalSuscribeInfo').classList.remove('hidden');
                 }
-                else  
+                else {
                     document.getElementById('formModalSuscribeBtn').innerHTML  =   'This user already exists';
+                    document.getElementById('formModalSuscribeBtn').disabled   =   false;
+                }
                 console.log(res);
             })
             .catch(function (error) {
@@ -358,8 +360,10 @@
                     document.getElementById('suscribe_form_home').classList.add('hidden');
                     document.getElementById('suscribe_page_home').classList.remove('hidden');
                 }
-                else  
+                else  {
                     document.getElementById('btn_suscribe_home').innerHTML  =   'This user already exists';
+                    document.getElementById('btn_suscribe_home').disabled   =   false;
+                }
                 console.log(res);
             })
             .catch(function (error) {
