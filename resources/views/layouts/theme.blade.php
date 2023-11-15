@@ -166,16 +166,16 @@
             <div class="my-10 md:-ml-10">
                 <ul>
                     <li>
-                        <a href="{{ route('home') }}">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="{{ route('about') }}">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="{{ route('services') }}">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="{{ route('contact') }}">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
                         <a href="{{ route('shop') }}">Store</a>
@@ -271,13 +271,13 @@
             </video>
             <!-- Modal content -->
             <div class="w-[320px] md:w-[500px] sign three">
-                <div class="block">
+                <div class="block" id="modelContentSubscribe">
                     <div id="formHideSubscribe">
                         {{-- <h1 class="text-primary uppercase lato-regular text-lg md:text-4xl text-center">Special Offer</h1> --}}
                         {{-- <h1 class="text-dark uppercase lato-regular md:text-2xl text-center">10% OFF</h1> --}}
                         <div class="div-off">
-                            <h1 class="textoVertical lato-light text-lg">Take</h1>
-                            <h1 class="text-5xl lato-bold">10% Off</h1>
+                            <h1 class="textoVertical font-semibold lato-harline text-2xl 2xl:text-2xl">Take</h1>
+                            <h1 class="text-5xl 2xl:text-6xl abril font-bold">10% Off</h1>
                         </div>
                         <img src="{{ asset('images/join_pures.png') }}" alt="licensed">
                         <form method="POST" action="{{ route('mail-suscribe') }}" id="formModalSuscribe">
@@ -291,15 +291,41 @@
                             <br />
                         </form>
                     </div>
-                    <div class="text-center my-10 hidden" id="formModalSuscribeInfo">
+                    <div class="text-center p-4 my-10 bg-primary rounded-md hidden" id="formModalSuscribeInfo">
+                        <img src="{{ asset('images/purestartllc-logox.png') }}" alt="logo" class="w-[250px] mx-auto mb-8">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-10 mx-auto"><path fill="#72B59A" d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 16.5H9V9.17L15.5 12.5L22 9.17V16.5M15.5 10.81L9 7.5H22L15.5 10.81M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" /></svg>
-                        <h1 class="text-lg md:text-3xl lato-medium text-primary">
+                        <h1 class="text-4xl abril text-pastel">
                             Thank You for subscribing!
                         </h1>
-                        <p class="md:text-lg lato-regular text-primary mt-5">You have succesfully subscribed. Check your email for your sparkly 10% discount!</p>
+                        <img src="{{ asset('images/gg.png') }}" alt="dada" class="mx-auto w-[220px] mt-2 mb-4">
+                        <p class="text-lg lato-regular text-pastel mt-5">You have succesfully subscribed. Check your email for your sparkly 10% discount!</p>
+                        <button class="lato-thin mt-10" id="yeaSirModal" style="background-color: #72B59A; color: #D1ECD4; border: none; border-radius: 50px; padding: 15px 15px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">
+                            Yes, I would like to keep in touch!
+                        </button>
+                        <p class="lato-light mt-10" style="color:#6c938c">The PS Team</p>
+                        <hr style="width:90px; border-color:#6c938c; margin:auto;" />
+                    </div>
+                    <div class="text-center p-4 my-10 bg-primary rounded-md hidden" id="formModalSuscribeInfoExists">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-10 mx-auto"><path fill="#72B59A" d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 16.5H9V9.17L15.5 12.5L22 9.17V16.5M15.5 10.81L9 7.5H22L15.5 10.81M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" /></svg>
+                        <p class="text-lg lato-regular text-pastel mt-5 text-center">
+                            You are already part of the PS family. Seat back and relax!
+                        </p>
+                        <img src="{{ asset('images/gg.png') }}" alt="dada" class="mx-auto w-[220px] my-7">
+                        <p class="lato-light mt-7" style="color:#6c938c">The PS Team</p>
+                        <hr style="width:90px; border-color:#6c938c; margin:auto;" />
+                    </div>
+                    <div class="text-center p-4 my-10 bg-primary rounded-md hidden" id="formModalSuscribeInfoYouAreWelcome">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-10 mx-auto"><path fill="#72B59A" d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 16.5H9V9.17L15.5 12.5L22 9.17V16.5M15.5 10.81L9 7.5H22L15.5 10.81M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" /></svg>
+                        <p class="text-lg lato-regular text-pastel mt-5 text-center">
+                            You have succesfully subscribed. Check your email for your sparkly 10% discount! <br />
+                            THANK YOU!
+                        </p>
+                        <img src="{{ asset('images/gg.png') }}" alt="dada" class="mx-auto w-[220px] my-7">
+                        <p class="lato-light mt-7" style="color:#6c938c">The PS Team</p>
+                        <hr style="width:90px; border-color:#6c938c; margin:auto;" />
                     </div>
 
-                    <div class="bg-[#e6e6e6] text-center p-2" style="border-radius: 40px;">
+                    <div class="bg-[#e6e6e6] text-center p-2 hidden" style="border-radius: 40px;">
                         <p class="lato-regular text-xs md:text-sm">Don't miss exclusive discount and cleaning tips.</p>
                         <p class="lato-regular text-xs md:text-sm">Joy delivered right to your inbox.</p>
                     </div>
@@ -335,10 +361,8 @@
                     document.getElementById('formHideSubscribe').classList.add('hidden');
                     document.getElementById('formModalSuscribeInfo').classList.remove('hidden');
                 }
-                else {
-                    document.getElementById('formModalSuscribeBtn').innerHTML  =   'This user already exists';
-                    document.getElementById('formModalSuscribeBtn').disabled   =   false;
-                }
+                else 
+                    subscribeExistsView(2);
                 console.log(res);
             })
             .catch(function (error) {
@@ -361,8 +385,7 @@
                     document.getElementById('suscribe_page_home').classList.remove('hidden');
                 }
                 else  {
-                    document.getElementById('btn_suscribe_home').innerHTML  =   'This user already exists';
-                    document.getElementById('btn_suscribe_home').disabled   =   false;
+                    subscribeExistsView(1);
                 }
                 console.log(res);
             })
@@ -391,6 +414,27 @@
                 $("#pcMenu #menu-logo img").removeClass("w-32");
                 $("#pcMenu #menu-logo img").addClass("w-44");
             });
+        }
+
+        $("#yeaSirModal").click(function() {
+            $("#formModalSuscribeInfo").addClass('hidden');
+            $("#formModalSuscribeInfoYouAreWelcome").removeClass('hidden');
+        });
+        $("#yeaSir").click(function() {
+            $("#suscribe_page_home").addClass('hidden');
+            $("#suscribe_page_homeYouAreWelcome").removeClass('hidden');
+        })
+
+        function subscribeExistsView(type) {
+            if(type == 1)
+            {
+                $("#suscribe_form_home").addClass('hidden');
+                $("#suscribe_page_homeExists").removeClass('hidden');
+            }
+            else {
+                $("#formHideSubscribe").addClass('hidden');
+                $("#formModalSuscribeInfoExists").removeClass('hidden');
+            }
         }
     </script>
 </body>

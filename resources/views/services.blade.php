@@ -1,12 +1,13 @@
-<div class="h-[120px] wrapper bg-primary italic">
-    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel">
-        What We <span class="lato-thin">Clean</span>
-    </h1>
+<div class="h-[120px] py-7 wrapper bg-primary italic">
+    <div class="flex items-center h-full">
+        <h1 class="w-40% md:35% 2xl:w-[20%] mx-auto text-3xl md:text-5xl abril text-left text-pastel">
+            What We <span class="lato-thin italic">Clean</span>
+        </h1>
+    </div>
     @for ($i = 1; $i < 10; $i++)
-        <div><span class="dot"></span></div>
+        <div class="burbuja"><span class="dot"></span></div>
     @endfor
 </div>
-<br /><br /><br /><br /><br />
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="w-full bg-icon-edificio"></div>
     <div class="md:flex md:justify-center items-center bg-[#e6f8f1]">
@@ -43,15 +44,16 @@
         </div>
     </div>
 </div>
-<div class="h-[120px] wrapper bg-primary italic">
-    <h1 class="w-full text-3xl md:text-5xl abril text-center text-pastel">
-        Our <span class="lato-thin">Services</span>
-    </h1>
+<div class="h-[120px] py-7 wrapper bg-primary italic">
+    <div class="flex items-center h-full">
+        <h1 class="w-40% md:35% 2xl:w-[20%] mx-auto text-3xl md:text-5xl abril text-left text-pastel">
+            Our <span class="lato-thin italic">Services</span>
+        </h1>
+    </div>
     @for ($i = 1; $i < 10; $i++)
-        <div><span class="dot"></span></div>
+        <div class="burbuja"><span class="dot"></span></div>
     @endfor
 </div>
-<br /><br /><br /><br />
 <div class="bg-pastel p-10">
     <div class="md:flex md:justify-between md:mx-20">
         <div class="my-auto">

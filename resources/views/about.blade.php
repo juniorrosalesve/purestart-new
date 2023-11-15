@@ -6,13 +6,13 @@
         --swiper-theme-color: #66c485;
     }
 </style>
-<div class="h-[200px] md:h-[140px] wrapper bg-secondary">
+{{-- <div class="h-[200px] md:h-[140px] wrapper bg-secondary">
     <h1 class="w-full text-2xl md:text-5xl abril text-center text-[#06446c]">We are a cleaning company that actually cleans!</h1>
     @for ($i = 1; $i < 10; $i++)
         <div><span class="dot"></span></div>
     @endfor
 </div>
-<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /> --}}
 {{-- <div class="bg-secondary w-full" style="z-index: 100;">
     <br /> 
     <div class="w-full text-center mb-60">
@@ -31,11 +31,9 @@
     <br />
 </div> --}}
 
-<div class="grid grid-cols-1 md:grid-cols-2 bg-white md:max-h-[1000px] -mt-1">
-    <div class="md:hidden">
-        <img src="{{ asset('images/valentina-photo.png') }}" class="w-[100%]" alt="valentina-photo">
-    </div>
-    <div class="md:block image-container h-auto bg-cover bg-center relative">
+<div class="flex flex-col md:flex-row bg-white md:max-h-[1000px] -mt-1">
+    <div class="image-container h-auto relative">
+        <img src="{{ asset('images/valentina-photo.png') }}" class="w-full h-full object-cover" alt="valentina-photo">
         <div class="overlay"></div>
     </div>
     <div class="w-[90%] mx-auto md:ml-8">
@@ -50,6 +48,17 @@
         <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">My home was always in order. I was taught step by step how to wash the dishes, specially if eggs were part of the meal. I watched my mom making the beds with such a technic. She would also iron sheets and towels! I know, kind of  crazy!! But I have to admit, they would look different once stored. </p>
         <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">For all of the above, I took the leap of faith to make this project happen and it has been the greatest adventure yet. I absolutely love what I do, and what I do it for. I cant wait to meet you and have you as part of my happy customers!!   </p>
         <h1 class="text-3xl mt-10 mb-10 md:mb-36 md:mt-10 text-center profile" style="letter-spacing: 3px;" data-aos="fade-up" data-aos-duration="500">It is a great pleasure to meet you!</h1>
+    </div>
+</div>
+<div class="bg-secondary h-auto md:h-72 z-10">
+    <br />
+    <h1 class="text-5xl our-values mb-4 text-center">OUR VALUES</h1>
+    <div class="w-[100%] xl:w-[90%] mx-auto">
+        <p class="text-center text-2xl md:text-[30px] xl:mt-3 xl:text-[42px] our-values-text uppercase">Honesty Loyalty Respect Integrity</p>
+        <p class="text-center text-2xl md:text-2xl xl:mt-3 xl:text-[35px] our-values-text uppercase">Reliability Authenticity Responsibility </p>
+        <p class="text-center text-2xl md:text-[32px] xl:mt-3 xl:text-[44px] our-values-text uppercase">Balance Self-Respect Compassion</p>
+        <p class="text-center text-2xl md:text-[31.5px] xl:mt-3 xl:text-[44px] our-values-text uppercase">Ethic Religion     Optimism     Kindness    </p>
+        <br />
     </div>
 </div>
 <div class="bg-[#417d67] relative">
@@ -118,18 +127,6 @@
         <div class="swiper-pagination"></div>
     </div>
     <img src="{{ asset('images/reviews.png') }}" alt="reviews" class="w-full h-[530px] lg:h-[700px]">
-</div>
-
-<div class="bg-secondary h-auto md:h-72 z-10">
-    <br />
-    <h1 class="text-5xl our-values mb-4 text-center">OUR VALUES</h1>
-    <div class="w-[100%] xl:w-[90%] mx-auto">
-        <p class="text-center text-2xl md:text-[30px] xl:mt-3 xl:text-[42px] our-values-text uppercase">Honesty Loyalty Respect Integrity</p>
-        <p class="text-center text-2xl md:text-2xl xl:mt-3 xl:text-[35px] our-values-text uppercase">Reliability Authenticity Responsibility </p>
-        <p class="text-center text-2xl md:text-[32px] xl:mt-3 xl:text-[44px] our-values-text uppercase">Balance Self-Respect Compassion</p>
-        <p class="text-center text-2xl md:text-[31.5px] xl:mt-3 xl:text-[44px] our-values-text uppercase">Ethic Religion     Optimism     Kindness    </p>
-        <br />
-    </div>
 </div>
 
 
