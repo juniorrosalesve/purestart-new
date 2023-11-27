@@ -137,13 +137,13 @@
 
     <div class="bg-primary-light p-3 w-full">
         <marquee class="lg:text-lg inquire" scrollamount="10">
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mx-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mr-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mx-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
         </marquee>
     </div>
 

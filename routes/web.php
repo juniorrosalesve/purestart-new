@@ -3,27 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('about', function() {
-    return view('about');
-})->name('about');
-
-Route::get('services', function() {
-    return view('services');
-})->name('services');
-
-Route::get('faq', function() {
-    return view('faq');
-})->name('faq');
+Route::get('blog', [BlogController::class, 'index'])->name('blog');
+Route::get('{nombre}/{id}', [BlogController::class, 'post'])->name('post');
 
 Route::get('shop', function() {
     return view('shop');
 })->name('shop');
-
-Route::get('contact', function() {
-    return view('contact');
-})->name('contact');

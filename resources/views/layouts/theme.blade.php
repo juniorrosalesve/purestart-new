@@ -26,38 +26,40 @@
 <body>
     <div class="bg-primary-light p-3 w-full">
         <marquee class="lg:text-lg inquire" scrollamount="10">
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block mr-3">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mx-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mr-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
             <p class="inline-block mx-3">•</p>
-            <a href="{{ route('contact') }}" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
+            <a href="#contact" class="lato-regular font-semibold inline-block">INQUIRE TO WORK WITH US</a>
         </marquee>
     </div>
     <!-- MENU -->
     <div class="bg-secondary p-8 hidden md:block" id="pcMenu">
         <div class="flex">
             <div class="mr-3" id="menu-logo">
-                <img src="./images/purestart_logo2.png" onclick="location.href='{{ route('home') }}'" alt="purestart-logo" class="w-44 cursor-pointer">
+                <img src="{{ asset('images/purestart_logo2.png') }}" onclick="location.href='{{ route('home') }}'" alt="purestart-logo" class="w-44 cursor-pointer">
             </div>
             <nav class="flex justify-center mt-1 my-auto">
                 <ul class="menu uppercase text-lg mt-[55px]">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#home' : route('home').'#home' }}">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#about' : route('home').'#about' }}">About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    {{-- <li>Reviews</li> --}}
-                    <li>
-                        <a href="#faq">Faq<span class="lowercase">s</span></a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#services' : route('home').'#services' }}">Services</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="{{ route('blog') }}" class="{{ (Route::current()->getName() == 'blog' || Route::current()->getName() == 'post') ? 'active' : '' }}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#faq' : route('home').'#faq' }}">Faq<span class="lowercase">s</span></a>
+                    </li>
+                    <li>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#contact' : route('home').'#contact' }}">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -82,11 +84,11 @@
         <div class="flex w-full justify-between">
             <div class="my-auto mr-3">
                 <a href="javascript:void(0)" type="button" data-drawer-target="menu-responsive" data-drawer-show="menu-responsive" aria-controls="menu-responsive" class="inline-flex items-center // text-2xl font-normal text-slate-800">
-                    <img src="images/lista.png" alt="MENU" class="w-8 mr-1 img-white" />
+                    <img src="{{ asset('images/lista.png') }}" alt="MENU" class="w-8 mr-1 img-white" />
                 </a>
             </div>
             <div>
-                <a href=""><img src="./images/purestart_logo2.png" alt="" class="w-[160px] mt-0 mr-0"></a>
+                <a href=""><img src="{{ asset('images/purestart_logo2.png') }}" alt="" class="w-[160px] mt-0 mr-0"></a>
             </div>
             <div class="my-auto flex">
                 <a href="{{ route('shop') }}" type="button" class="inline-flex items-center // mr-3 // text-2xl font-normal text-slate-800">
@@ -109,7 +111,7 @@
             <div class="sticky top-0 z-30 w-full bg-slate-100">
                 <h5 class="flex justify-between items-center mb-4 text-slate-900 text-lg font-semibold" id="drawer-label" type="button" data-drawer-dismiss="menu-responsive" aria-controls="menu-responsive">
                     <span class="inline-flex justify-between items-center">
-                        <img src="images/lista.png" alt="MENU" class="w-4 mr-1"> 
+                        <img src="{{ asset('images/lista.png') }}" alt="MENU" class="w-4 mr-1"> 
                         Navbar
                     </span>
                     <span class="text-2xl rotate-45 cursor-pointer">+</span>
@@ -120,35 +122,42 @@
                 <nav>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="#home" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                            <a href="{{ (Route::current()->getName() == 'home') ? '#home' : route('home').'#home' }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
                                 Home
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="#about" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                            <a href="{{ (Route::current()->getName() == 'home') ? '#about' : route('home').'#about' }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
                                 About
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="#services" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                            <a href="{{ (Route::current()->getName() == 'home') ? '#services' : route('home').'#services' }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
                                 Services
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="#faq" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                            <a href="{{ route('blog') }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
+                        <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
+                            <a href="{{ (Route::current()->getName() == 'home') ? '#faq' : route('home').'#faq' }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
                                 Faq<span class="lowercase">s</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="border-[1px] border-solid border-b-[0px] rounded-lg sticky top-0 drop-shadow-[0px_0px_3px_rgba(0,0,0,0.10)]">
                         <li class="mb-1 relative float-none border-b-[1px] // first:rounded-tl-lg first:rounded-tr-lg last:rounded-bl-lg last:rounded-br-lg">
-                            <a href="#contact" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
+                            <a href="{{ (Route::current()->getName() == 'home') ? '#contact' : route('home').'#contact' }}" class="uppercase relative roboto-light py-3 px-3 text-primary text-left text-lg // flex items-center">
                                 Contact
                             </a>
                         </li>
@@ -166,16 +175,19 @@
             <div class="my-10 md:-ml-10">
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#home' : route('home').'#home' }}">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#about' : route('home').'#about' }}">About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#services' : route('home').'#services' }}">Services</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#faq' : route('home').'#faq' }}">Faq<span class="lowercase">s</span></a>
+                    </li>
+                    <li>
+                        <a href="{{ (Route::current()->getName() == 'home') ? '#contact' : route('home').'#contact' }}">Contact</a>
                     </li>
                     <li>
                         <a href="{{ route('shop') }}">Store</a>
