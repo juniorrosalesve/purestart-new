@@ -37,9 +37,9 @@
         <div class="overlay"></div>
     </div>
     <div class="w-[90%] mx-auto md:ml-8">
-        <h1 class="text-4xl mt-6 mb-10 abril italic text-[#06446c]" data-aos="fade-in" data-aos-duration="500">
+        <h1 class="text-4xl mt-6 mb-10 abril text-[#06446c]" data-aos="fade-in" data-aos-duration="500">
             Meet <br />
-            <span class="lato-thin">&nbsp;&nbsp;&nbsp;&nbsp;The Owner</span>
+            <span class="lato-thin italic">&nbsp;&nbsp;&nbsp;&nbsp;The Owner</span>
         </h1>
         <p class="profile text-2xl" data-aos="fade-in" data-aos-duration="500">Hey, I’m Valentina. I am a citrus lover, sport obhsessed and an art and craft genius.</p>
         <p class="profile text-2xl mt-8" data-aos="fade-in" data-aos-duration="500">I decided to create PURESTART in light of te fact of my desire and motivation to dive into the entrepreneurial world. </p>

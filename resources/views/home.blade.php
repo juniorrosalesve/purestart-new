@@ -73,8 +73,7 @@
                                 Join PureStart Newsletter
                             </h1>
                             <h1 class="dont-miss text-slate-200 text-center text-lg mt-1 mb-3" data-aos="zoom-in" data-aos-duration="500">
-                                Don’t miss exclusive discounts and cleaning tips &
-                                tricks. <br /> Joy delivered right to your inbox. 
+                                Don’t miss exclusive discounts and cleaning tips <br /> Joy delivered right to your inbox. 
                             </h1>
                             <input type="text" name="firstname" class="input-suscribe mb-2" placeholder="Enter your full name" data-aos="fade-right" data-aos-duration="500">
                             <input type="text" name="email" class="mt-3 input-suscribe" placeholder="Enter your email address" data-aos="fade-right" data-aos-duration="500">

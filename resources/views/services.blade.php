@@ -1,4 +1,4 @@
-<div class="h-[120px] py-7 wrapper bg-primary italic">
+<div class="h-[120px] py-7 wrapper bg-primary">
     <div class="flex items-center h-full">
         <h1 class="w-40% md:35% 2xl:w-[20%] mx-auto text-3xl md:text-5xl abril text-left text-pastel">
             What We <span class="lato-thin italic">Clean</span>
@@ -44,7 +44,7 @@
         </div>
     </div>
 </div>
-<div class="h-[120px] py-7 wrapper bg-primary italic">
+<div class="h-[120px] py-7 wrapper bg-primary">
     <div class="flex items-center h-full">
         <h1 class="w-40% md:35% 2xl:w-[20%] mx-auto text-3xl md:text-5xl abril text-left text-pastel">
             Our <span class="lato-thin italic">Services</span>

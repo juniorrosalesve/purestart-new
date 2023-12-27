@@ -1,9 +1,9 @@
-<div class="h-[180px] py-7 wrapper bg-primary italic">
+<div class="h-[180px] py-7 wrapper bg-primary">
     <div class="flex items-center h-full">
         <h1 class="40% md:35% 2xl:w-[20%] mx-auto text-3xl md:text-5xl abril text-left text-pastel -mt-3">
             Frequently Asked 
             <span class="lato-thin italic block 2xl:inline">
-                @for ($i = 0; $i < 16; $i++)
+                @for ($i = 0; $i < 14; $i++)
                     &nbsp;
                 @endfor
                 Questions

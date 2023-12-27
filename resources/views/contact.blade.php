@@ -1,8 +1,11 @@
-<div class="h-[150px] md:h-[210px] py-7 wrapper bg-primary italic">
+<div class="h-[150px] md:h-[210px] py-7 wrapper bg-primary">
     <div class="flex items-center h-full">
         <h1 class="40% md:35% 2xl:w-[20%] mx-auto text-2xl md:text-5xl abril text-left text-pastel -mt-3">
             Drop Us A Line! <br /> 
-            <span class="lato-thin">
+            @for ($i = 0; $i < 5; $i++)
+                &nbsp;
+            @endfor
+            <span class="lato-thin italic">
                 We will get back to you soon!!
             </span>
         </h1>

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('body')
-    <div class="mt-32">
+    <div>
         <div class="card shadow bordered bg-base-100">
             <div class="card-body">
                 <div class="flex justify-between my-4">
                     <div>
-                        <h2 class="text-2xl inline-block">Ventas</h2>
+                        <h2 class="text-2xl inline-block">Clientes</h2>
                     </div>
                     {{-- <div>
                         <button onclick="location.href='#';" class="btn btn-primary btn-sm">Registrar</button> 

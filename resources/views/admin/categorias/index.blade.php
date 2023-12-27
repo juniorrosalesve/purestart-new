@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('body')
-    <div class="mt-32">
+    <div>
         <div class="card shadow bordered bg-base-100">
             <div class="card-body">
                 <div class="flex justify-between my-4">
