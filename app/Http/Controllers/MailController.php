@@ -53,7 +53,7 @@ class MailController extends Controller
             }
         }
         $data   =   $r->except(['_token', 'type']);
-        $data['token']  =   Hash::make($data['email']);
+        $data['token'] = bin2hex(random_bytes(16));
         Subscription::create($data);
     
         Mail::send('mails.newsletter', $data, function ($message) use ($data) {
