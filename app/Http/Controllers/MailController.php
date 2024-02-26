@@ -16,7 +16,7 @@ class MailController extends Controller
 {
     public function contact(Request $r) {
         $data   =   $r->except('_token');
-        Mail::to('conceptodigital08@gmail.com')->queue(new ContactMail(
+        Mail::to('purestartllc@gmail.com')->queue(new ContactMail(
             $data,
             'contact'
         ));
