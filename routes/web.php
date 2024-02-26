@@ -7,6 +7,8 @@ use App\Http\Controllers\VentasController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\MailController;
+use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     return view('home');
@@ -18,6 +20,8 @@ Route::get('post/{nombre}/{id}', [BlogController::class, 'post'])->name('post');
 Route::get('shop', function() {
     return view('shop');
 })->name('shop');
+
+Route::get('verify-email/{token}', [MailController::class, 'verify_email'])->name('verify-email');
 
 Route::middleware(['auth', 'verified'])->group(function() {
     Route::get('dashboard', function() {

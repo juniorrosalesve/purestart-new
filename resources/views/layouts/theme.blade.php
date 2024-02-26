@@ -310,9 +310,9 @@
                             <h1 class="text-5xl 2xl:text-6xl abril font-bold">10% Off</h1>
                         </div>
                         <img src="{{ asset('images/join_pures.png') }}" alt="licensed">
-                        <form method="POST" action="{{ route('mail-suscribe') }}" id="formModalSuscribe">
+                        <form method="POST" id="formModalSuscribe">
                             <div class="grid grid-cols-1 gap-2">
-                                <input type="text" name="firstname" class="input-suscribe-modal" placeholder="Full Name">
+                                <input type="text" name="name" class="input-suscribe-modal" placeholder="Full Name">
                                 <input type="text" name="email" class="mt-3 md:mt-0 input-suscribe-modal" placeholder="Email Address">
                             </div>
                             <div class="flex justify-center mt-2">
@@ -337,7 +337,7 @@
                     </div>
                     <div class="text-center p-4 my-10 bg-primary rounded-md hidden" id="formModalSuscribeInfoExists">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-10 mx-auto"><path fill="#72B59A" d="M22 5.5H9C7.9 5.5 7 6.4 7 7.5V16.5C7 17.61 7.9 18.5 9 18.5H22C23.11 18.5 24 17.61 24 16.5V7.5C24 6.4 23.11 5.5 22 5.5M22 16.5H9V9.17L15.5 12.5L22 9.17V16.5M15.5 10.81L9 7.5H22L15.5 10.81M5 16.5C5 16.67 5.03 16.83 5.05 17H1C.448 17 0 16.55 0 16S.448 15 1 15H5V16.5M3 7H5.05C5.03 7.17 5 7.33 5 7.5V9H3C2.45 9 2 8.55 2 8S2.45 7 3 7M1 12C1 11.45 1.45 11 2 11H5V13H2C1.45 13 1 12.55 1 12Z" /></svg>
-                        <p class="text-lg lato-regular text-pastel mt-5 text-center">
+                        <p class="text-lg lato-regular text-pastel mt-5 text-center" id="formModalSuscribeInfoExistsText">
                             You are already part of the PS family. Seat back and relax!
                         </p>
                         <img src="{{ asset('images/gg.png') }}" alt="dada" class="mx-auto w-[220px] my-7">
@@ -384,17 +384,18 @@
             event.preventDefault();
             document.getElementById('formModalSuscribeBtn').innerHTML  =   'Loading...';
             document.getElementById('formModalSuscribeBtn').disabled   =   true;
-            axios.post('{{ route('mail-suscribe') }}', {
-                firstname: this.elements.firstname.value,
-                email: this.elements.email.value
+            axios.post('{{ route('mail-suscribe-new') }}', {
+                name: this.elements.name.value,
+                email: this.elements.email.value,
+                type:2
             })
             .then(function (res) {
-                if(res.data == 1) {
+                if(res.data.status == 1) {
                     document.getElementById('formHideSubscribe').classList.add('hidden');
                     document.getElementById('formModalSuscribeInfo').classList.remove('hidden');
                 }
                 else 
-                    subscribeExistsView(2);
+                    subscribeExistsView(2, res.data.message);
                 console.log(res);
             })
             .catch(function (error) {
@@ -407,17 +408,19 @@
             event.preventDefault();
             document.getElementById('btn_suscribe_home').innerHTML  =   'Loading...';
             document.getElementById('btn_suscribe_home').disabled   =   true;
-            axios.post('{{ route('mail-suscribe') }}', {
-                firstname: this.elements.firstname.value,
-                email: this.elements.email.value
+            axios.post('{{ route('mail-suscribe-new') }}', {
+                name: this.elements.name.value,
+                email: this.elements.email.value,
+                type:1
             })
             .then(function (res) {
-                if(res.data == 1) {
+                console.log(res.data);
+                if(res.data.status == 1) {
                     document.getElementById('suscribe_form_home').classList.add('hidden');
                     document.getElementById('suscribe_page_home').classList.remove('hidden');
                 }
                 else  {
-                    subscribeExistsView(1);
+                    subscribeExistsView(1, res.data.message);
                 }
                 console.log(res);
             })
@@ -457,14 +460,16 @@
             $("#suscribe_page_homeYouAreWelcome").removeClass('hidden');
         })
 
-        function subscribeExistsView(type) {
+        function subscribeExistsView(type, txt = null) {
             if(type == 1)
             {
                 $("#suscribe_form_home").addClass('hidden');
+                $("#suscribe_page_homeExists #suscribe_page_homeExists_textInfo").text(txt);
                 $("#suscribe_page_homeExists").removeClass('hidden');
             }
             else {
                 $("#formHideSubscribe").addClass('hidden');
+                $("#formModalSuscribeInfoExists #formModalSuscribeInfoExistsText").text(txt);
                 $("#formModalSuscribeInfoExists").removeClass('hidden');
             }
         }

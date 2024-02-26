@@ -9,5 +9,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('mail/suscribe', [MailController::class, 'suscribe'])->name('mail-suscribe');
+Route::post('mail/suscribe-new', [MailController::class, 'new_mail_subscription'])->name('mail-suscribe-new');
 Route::post('mail/contact', [MailController::class, 'contact'])->name('mail-contact');
+Route::post('mail/test', [MailController::class, 'test_mail']);
